@@ -1,0 +1,216 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Widgets (global styles)
+2. Tag Cloud
+3. Search
+4. Flickr
+5. Default Widgets
+-------------------------------------------------------------------*/
+
+@import 'compass';
+@import 'variables';
+@import 'directional';
+
+/* Widgets
+---------------------------------------- */
+
+.widgets {
+	padding: 0;
+
+	li {
+		list-style: none;
+	}
+
+	.widget-title {
+		font-size: 24px;
+	}
+}
+
+.widget-container {
+	font-size: 13px;
+
+	& + & {
+		margin-top: 30px;
+	}
+}
+
+/* Tag Cloud
+---------------------------------------- */
+
+.tagcloud {
+	font-size: 12px;
+	@include clearfix;
+	margin: 25px -1px 0 -1px;
+
+	a {
+		background-color: #e2e2e2;
+		border-radius: 4px;
+		color: #a4a4a4;
+		display: block;
+		float: left;
+		font-size: 13px !important;
+		margin: 1px;
+		padding: 2px 25px;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+/* Search
+---------------------------------------- */
+
+.searchform {
+	div {
+		position: relative;
+	}
+
+	input[type="text"]	 {
+		background-color: #fff;
+		border: 1px solid #ebebeb;
+		height: 52px;
+		padding: 5px 22px;
+	}
+
+	button {
+		background: none;
+		border: none;
+		position: absolute;
+		padding: 19px 22px;
+		right: 0;
+		top: 0%;
+	}
+}
+
+/* Flickr
+---------------------------------------- */
+
+.flickr-widget {
+	margin: 20px -2% 0 -2%;
+
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+	a {
+		float: left;
+		margin: 2%;
+		max-width: 85px;
+		position: relative;
+		overflow: hidden;
+		width: 29.33%;
+
+		&:hover {
+			text-decoration: none;
+
+			&:before {
+				opacity: 1;
+			}
+
+			&:after {
+				opacity: .9;
+			}
+		}
+
+		&:before,
+		&:after {
+			position: absolute;
+			opacity: 0;
+			@include transition(all .2s);
+		}
+
+		&:before {			
+			color: #fff;
+			content: "\f00e";
+			font-family: FontAwesome;
+			font-size: 18px;
+			left: 50%;
+			margin-left: -9px;
+			margin-top: -19px;
+			top: 50%;
+			z-index: 2;
+		}
+
+		&:after {
+			bottom: 0;
+			content: "";
+			height: 102%;
+			left: 0;
+			top: 0;
+			width: 102%;
+		}
+	}
+}
+
+.widget_recent_entries,
+.recent-widget {
+	ul {
+		padding-left: 0;
+
+		li {
+			border-top: 1px solid #ececec;
+			position: relative;
+			padding-bottom: 19px;
+			padding-top: 19px;
+
+			&:first-of-type {
+				border: 0;
+				padding-top: 0;
+			}
+
+			h5 {
+				font-size: 13px;
+				margin: 0;
+				text-transform: uppercase;
+			}
+
+			> a {
+				&:hover {
+					text-decoration: none;
+				}
+
+				i {
+					margin-left: 5px;
+				}
+			}
+
+			> p {
+				margin-bottom: 0;
+			}
+
+			> .post-date {
+				&:after {
+					content: "/";
+					margin: 0 7px;
+				}
+			}
+		}
+	}
+}
+
+.recent-posts-widget {
+	ul {
+		li {
+			padding-left: 81px;
+
+			&:first-of-type {
+				> img {
+					top: 2px;
+				}
+			}
+
+			> img {
+				border: 6px solid;
+				border-radius: 100%;
+				left: 0;
+				position: absolute;
+				top: 22px;
+				width: 58px;
+			}
+		}
+	}
+}

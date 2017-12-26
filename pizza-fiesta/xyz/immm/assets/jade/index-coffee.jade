@@ -1,0 +1,223 @@
+doctype html
+html
+	include head
+	body.menu-style-2.menu-dark.responsive.sticky-menu
+		-var current_page = 'coffee';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include header-coffee
+
+			div(id="home" class="parallax hidden-xs" style="background-image: url(assets/images/coffee-slider.jpg); width: 100%; height: 862px;")
+				div.ls-slide(data-ls="slidedelay: 4000; transition2d: 5,5;")
+					h1.ls-l(style="top: 47%; left: 50%;")
+						| invigorate your 
+						span.color coffee 
+						| shop 
+					h4.style-2.ls-l(style="top: 55%; left: 50%;")
+						| with kataleya
+				div.ls-slide(data-ls="slidedelay: 4000; transition2d: 5,5;")
+					h1.ls-l.text-center(style="top: 47%; left: 50%;")
+						| simple yet 
+						span.color beautiful  
+						| template
+					h4.style-2.ls-l(style="top: 55%; left: 50%;")
+						| for your coffee shop
+				div.ls-slide(data-ls="slidedelay: 4000; transition2d: 5,5;")
+					h1.ls-l(style="top: 47%; left: 50%;")
+						| fresh  
+						span.color coffee 
+						| for you
+					h4.style-2.ls-l(style="top: 55%; left: 50%;")
+						| made every day
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center features
+					.row
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-fire
+									h2 strikingly stylish
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-star
+									h2 star theme
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-book
+									h2 recipes for you
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-heart
+									h2 cooking with love
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+			section(style="background-image: url(assets/images/capucino.jpg); background-repeat: no-repeat; background-size: 501px auto;")
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2(id="coffee").section-heading.text-center our blends
+					.row
+						.col-md-7.col-md-offset-3
+							.food-item.price-right
+								h3 pure arabica
+								p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+								h4.price
+									span $
+									| 2
+							.food-item.price-right
+								h3 brazilian mix
+								p onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+								h4.price
+									span $
+									| 4
+							.food-item.price-right
+								h3 just a cup of joy
+								p onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+								h4.price
+									span $
+									| 1
+							.food-item.price-right
+								h3 spunky morning
+								p onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+								h4.price
+									span $
+									| 3
+			section.jumbotron.parallax.text-center(id="coffee-statement-1" style="background-image: url(assets/images/coffee-statement-1.jpg);")
+				.container
+					h2 
+						| the last 
+						span.color.style-2 coffee 
+						| theme you’ll need
+					a.btn.btn-md(href="#") buy kateleya			
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center(id="to-go") kataleya inside
+
+						.col-md-5.col-md-offset-1
+							img(src="assets/images/offer.jpg" alt="Offers")
+						.col-md-5
+							h5
+								| what can 
+								span.color kataleya 
+								| offer
+							ul.list.icons
+								li 
+									i.fa.fa-cutlery
+									| we can acomodate 40 people
+								li
+									i.fa.fa-leaf
+									| fresh food every day, produced locally from our neightbours
+								li
+									i.fa.fa-trophy
+									| world renouned chefs with 20 years experience
+								li
+									i.fa.fa-glass
+									| need a romantic getaway, kateleya is for you
+								li
+									i.fa.fa-suitcase
+									| or maybe a business dinner, try us now
+								li
+									i.fa.fa-coffee
+									| or just come for a cupcontact us of exelent coffee
+			section
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2(id="blends").section-heading.text-center make a reservation
+					.row
+						.col-md-6.col-md-offset-3
+							form(role="form" class="box" data-form="reservation" data-success="You have successfully made a reservation!")
+								.form-group
+									input(type="text" placeholder="name" name="name")
+								.form-group
+									input(type="email" placeholder="email" name="email")
+								.form-group
+									input(type="tel" placeholder="phone" name="phone")
+								button(type="submit" class="btn btn-md") submit				
+			section.twitter.text-center(style="background-image: url(assets/images/twitter.jpg);")
+				.container
+					.row
+						h2 twitter feeds
+						.carousel.slide(id="twitter" data-twitter="AstudioTweet" data-ride="carousel")
+							.carousel-inner
+								| Loading tweets...
+							ol.carousel-indicators
+								li.active(data-target="#twitter" data-slide-to="0")
+								li(data-target="#twitter" data-slide-to="1")
+								li(data-target="#twitter" data-slide-to="2")
+						a.btn.btn-md(href="#") follow us
+
+
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center(id="contact") contact us
+
+					.row
+						.col-md-6
+							h3 contact details
+							p Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya.
+
+							ul.contact-info
+								li
+									i.fa.fa-home
+									| 445 Street, your address in Wherever you are
+								li
+									i.fa.fa-phone
+									| Phone: +386 40 555 666
+								li
+									i.fa.fa-print
+									| Fax: +386 10 555 66677
+								li
+									i.fa.fa-envelope
+									| Email: 
+									a(href="mailto:support@anpsthemes.com") support@anpsthemes.com
+						.col-md-6
+							form(role="form")
+								.form-group
+									input(type="email" placeholder="e-mail")
+								.form-group
+									select
+										option test
+								.form-group
+									input(type="tel" placeholder="phone")
+								.form-group
+									textarea(placeholder="message")
+								button(type="submit" class="btn btn-md") submit				
+			
+			section.map#map
+
+			section.jumbotron.text-center
+				.container
+					h2 
+						span.color all you need
+						| , give it a go
+					a.btn.btn-md(href="#") buy kateleya
+
+			include footer

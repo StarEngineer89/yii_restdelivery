@@ -1,0 +1,51 @@
+doctype html
+html
+	include head
+	body.responsive.sticky-menu
+		-var current_page = 'blog-masonry';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include header
+
+			section.no-spacing
+				.container
+					.row
+						.col-md-12
+							.page-heading
+								h1 blog masonry
+
+								ul
+									li
+										a(href="index.html") home
+									li
+										a(href="blog.html") blog
+									li
+										span blog masonry
+			section.style-2
+				div.container
+					div.row
+						div.blog-loop.columns.masonry
+							each val, index in ["Fantastically juicy andfresh shortly just kataleya", "Tomato soup from heavens, learn it quickly with our help", "So juicy, fresh and tasty it will please your hunger", "Don’t you just want to bite it check the recipe", "Chef’s recipie for a relaxing lunch for lazy Sundays", "Fantastically juicy, fresh shortly just delicious", "Tips on your table decor, impress your guests", "Use clothes and save your table from ware", "Fantastically juicya and fresh just delicious "]
+								article.col-md-4.col-sm-6
+									header.text-center
+										a(href="blog-single.html")
+											img(src="assets/images/blog-masonry-post-" + (index+1) + ".jpg" alt="Blog post " + (index+1))
+											.hover
+												i.fa.fa-cutlery
+												div.day 22
+												div.month Mar
+									.post-inner
+										h2
+											=val
+										p Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya.
+										a.btn.btn-md(href="blog-single.html") more
+			section.jumbotron.text-center
+				.container
+					h1 
+						span.color all you need
+						| , give it a go
+					a.btn.btn-md(href="#") buy kateleya
+
+			include footer

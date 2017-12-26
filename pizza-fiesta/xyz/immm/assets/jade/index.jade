@@ -1,0 +1,255 @@
+doctype html
+html
+	include head
+	body.menu-style-2.responsive.sticky-menu
+		-var current_page = 'index';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include order-menu-restaurant
+			include header
+
+			div(id="home" class="parallax hidden-xs" style="background-image: url(assets/images/slider-1-background.jpg); width: 100%; height: 862px;")
+				div.ls-slide(data-ls="slidedelay: 4000; transition2d: 5,5;")
+					h1.ls-l.text-center(style="top: 47%; left: 50%;")
+						| the  
+						span.color place 
+						| to eat
+					h4.style-2.ls-l.text-center(style="top: 55%; left: 50%;")
+						| and much more
+				div.ls-slide(data-ls="slidedelay: 4000; transition2d: 5,5;")
+					h1.ls-l.text-center(style="top: 47%; left: 50%;")
+						| to spend 
+						span.color your 
+						| time
+					h4.style-2.ls-l.text-center(style="top: 55%; left: 50%;")
+						| in a great company
+				div.ls-slide(data-ls="slidedelay: 4000; transition2d: 5,5;")
+					h1.ls-l.text-center(style="top: 47%; left: 50%;")
+						| to order 
+						span.color online
+					h4.style-2.ls-l.text-center(style="top: 55%; left: 50%;")
+						| with class
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center always fresh, don't miss it
+
+						.posts
+							- for (var x = 1; x <= 6; x++)
+								article.col-md-4.col-sm-6
+									if x > 3
+										a(href="portfolio/portfolio-post-1.html?ajax=true" data-rel="prettyPhoto")
+											img(alt="Recent Post " + x src="assets/images/recent-post-" + x + ".jpg")
+
+											.hover
+												i.fa.fa-cutlery
+												h2 fresh salad for a hot summer
+									else
+										a(href="portfolio-single.html")
+											img(alt="Recent Post " + x src="assets/images/recent-post-" + x + ".jpg")
+
+											.hover
+												i.fa.fa-cutlery
+												h2 fresh salad for a hot summer
+
+			section.opening-hours
+				.container
+					.row
+						.col-md-12
+							ul
+								li 
+									h5.color we are opened
+								- var days = ['mon:', 'tue:', 'wed:', 'thu:', 'fri:', 'sat:', 'sun:']
+								- var hours = ['9 - 22', '9 - 22', '9 - 22', '9 - 22', '9 - 22', '9 - 24', '9 - 24']
+								- for (var x = 0; x < 7; x++)
+									li
+										h6
+											= days[x]
+										= hours[x]
+
+			section.container
+				.row
+					.col-md-12
+						include mini-logo
+						h2.section-heading.text-center(id="menu") kataleya food menu
+
+				.row
+					.col-md-12
+						ul.nav.nav-tabs
+							each val, index in ["soups", "cold appetizers", "sea food", "pasta", "main course", "salads", "deserts"]
+								li(class=index === 0 ? 'active' : '')
+									a(href="#tab-" + index data-toggle="tab")
+										=val
+						.tab-content
+							each val, index in ["soups", "cold appetizers", "sea food", "pasta", "main course", "salads", "deserts"]
+								.tab-pane(class=index === 0 ? 'active' : '' id="tab-" + index)
+									.food-item.text-center
+										h3 fantastic tomato soup
+										| onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+										h4.price
+											span $
+											| 4
+									.food-item.text-center
+										h3 chicken soup
+										| onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+										h4.price
+											span $
+											| 3,5
+									.food-item.text-center
+										h3 mushroom soup
+										| onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+										h4.price
+											span $
+											| 7
+			
+			section.jumbotron.style-2.parallax.text-center(style="background-image: url(assets/images/index-statement-1.jpg)" id="no-clutter")
+				.container
+					h2
+						| no clutter 
+						span.color.style-2 only 
+						| what you need
+					a.btn.btn-md(href="#") buy kateleya
+
+
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center(id="restaurant") kataleya inside
+
+						.col-md-5.col-md-offset-1
+							img(src="assets/images/offer.jpg" alt="Offers")
+						.col-md-5
+							h5
+								| what can 
+								span.color kataleya 
+								| offer
+							ul.list.icons
+								li 
+									i.fa.fa-cutlery
+									| we can acomodate 40 people
+								li
+									i.fa.fa-leaf
+									| fresh food every day, produced locally from our neightbours
+								li
+									i.fa.fa-trophy
+									| world renouned chefs with 20 years experience
+								li
+									i.fa.fa-glass
+									| need a romantic getaway, kateleya is for you
+								li
+									i.fa.fa-suitcase
+									| or maybe a business dinner, try us now
+								li
+									i.fa.fa-coffee
+									| or just come for a cupcontact us of exelent coffee
+				
+			section.container
+				.row
+					.col-md-12
+						include mini-logo
+						h2.section-heading.text-center(id="reservation") make a reservation
+				.row
+					.col-md-6.col-md-offset-1.hidden-xs.hidden-sm
+						img(src="assets/images/reservation.jpg" alt="Reservation")
+					.col-md-4
+						form(role="form" data-form="reservation" data-success="You have successfully made a reservation!")
+							.form-group
+								.form-date
+									input(type="text" data-date="day" name="day" value="22")
+									select(data-date="month" name="month")
+										option(value="1") January
+										option(value="2") February
+										option(value="3") March
+										option(value="4") April
+										option(value="5") May
+										option(value="6") June
+										option(value="7") July
+										option(value="8") August
+										option(value="9") September
+										option(value="10") October
+										option(value="11") November
+										option(value="12") December
+									input(type="text" data-date="year" name="year" value="2014")
+									input(type="text" data-date="hour" name="hour" value="21")
+									input(type="text" data-date="minute" name="minute" value="00")
+							.form-group
+								.row
+									.col-md-8
+										input(type="text" placeholder="name" name="name")
+									.col-md-4
+										input(type="text" placeholder="how many?" name="seats")
+							.form-group
+								input(type="email" placeholder="e-mail" name="email")
+							.form-group
+								input(type="tel" placeholder="phone" name="phone")
+							.form-group
+								textarea(placeholder="message" name="message")
+							button(type="submit" class="btn btn-md") submit
+			
+
+			section.twitter.text-center(style="background-image: url(assets/images/twitter.jpg);")
+				.container
+					.row
+						h2 twitter feeds
+						.carousel.slide(id="twitter" data-twitter="AstudioTweet" data-ride="carousel")
+							.carousel-inner
+								| Loading tweets...
+							ol.carousel-indicators
+								li.active(data-target="#twitter" data-slide-to="0")
+								li(data-target="#twitter" data-slide-to="1")
+								li(data-target="#twitter" data-slide-to="2")
+						a.btn.btn-md(href="#") follow us
+
+
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center(id="contact") contact us
+
+					.row
+						.col-md-6
+							h3 contact details
+							p Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya.
+
+							ul.contact-info
+								li
+									i.fa.fa-home
+									| 445 Street, your address in Wherever you are
+								li
+									i.fa.fa-phone
+									| Phone: +386 40 555 666
+								li
+									i.fa.fa-print
+									| Fax: +386 10 555 66677
+								li
+									i.fa.fa-envelope
+									| Email: 
+									a(href="mailto:support@anpsthemes.com") support@anpsthemes.com
+						.col-md-6
+							form(role="form")
+								.form-group
+									input(type="email" placeholder="e-mail")
+								.form-group
+									input(type="tel" placeholder="phone")
+								.form-group
+									textarea(placeholder="message")
+								button(type="submit" class="btn btn-md") submit				
+			
+			section.map#map
+
+			section.jumbotron.text-center
+				.container
+					h2 
+						span.color all you need
+						| , give it a go
+					a.btn.btn-md(href="#") buy kateleya
+
+			include footer

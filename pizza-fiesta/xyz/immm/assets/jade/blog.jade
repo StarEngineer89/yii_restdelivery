@@ -1,0 +1,117 @@
+doctype html
+html
+	include head
+	body.responsive.sticky-menu
+		-var current_page = 'blog';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include header
+
+			section.no-spacing
+				.container
+					.row
+						.col-md-12
+							.page-heading
+								h1 blog
+
+								ul
+									li
+										a(href="index.html") home
+									li
+										span blog
+
+			section.blog-loop.style-2
+				div.container
+					div.row
+						.col-md-12
+							article.text-center
+								header
+									a(href="blog-single.html")
+										img(src="assets/images/blog-post-1.jpg" alt="Blog Post 1")
+									h2 Fantastically juicy andfresh shortly just kataleya
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique risus in viverra porttitor. Cras consectetur, felis sit amet placerat commodo, sem erat sagittis neque, non ullamcorper ipsum dolor eu enim. Cras tincidunt bibendum sem, vitae commodo erat pretium nec. Pellentesque eu elit eleifend, porttitor enim vitae, eleifend diam. Duis dignissim congue sem, eu scelerisque lorem consequat sed. Curabitur sagittis rhoncus urna, eget aliquam erat condimentum a. Donec velit quam, feugiat nec dapibus nec, pretium ut tellus. Nulla vulputate ut ante non pulvinar.
+								.post-meta
+									ul
+										li
+											i.fa.fa-user
+											| posted by Admin
+										li
+											i.fa.fa-calendar-o
+											| 21th June 2014
+										li
+											i.fa.fa-comment-o
+											a(href="blog-single.html#comments") comments [ 3 ]
+										li
+											i.fa.fa-folder-o
+											a(href="#") Carrer 
+											| / 
+											a(href="#") Photography 
+											| / 
+											a(href="#") Post
+								a.btn.btn-md(href="blog-single.html") more
+							article.text-center
+								header
+									a(href="blog-single.html")
+										img(src="assets/images/blog-post-2.jpg" alt="Blog Post 2")
+									h2 Fantastically juicy andfresh shortly just kataleya
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique risus in viverra porttitor. Cras consectetur, felis sit amet placerat commodo, sem erat sagittis neque, non ullamcorper ipsum dolor eu enim. Cras tincidunt bibendum sem, vitae commodo erat pretium nec. Pellentesque eu elit eleifend, porttitor enim vitae, eleifend diam. Duis dignissim congue sem, eu scelerisque lorem consequat sed. Curabitur sagittis rhoncus urna, eget aliquam erat condimentum a. Donec velit quam, feugiat nec dapibus nec, pretium ut tellus. Nulla vulputate ut ante non pulvinar.
+								.post-meta
+									ul
+										li
+											i.fa.fa-user
+											| posted by Admin
+										li
+											i.fa.fa-calendar-o
+											| 21th June 2014
+										li
+											i.fa.fa-comment-o
+											a(href="#") comments [ 3 ]
+										li
+											i.fa.fa-folder-o
+											a(href="#") Carrer 
+											| / 
+											a(href="#") Photography 
+											| / 
+											a(href="#") Post
+								a.btn.btn-md(href="blog-single.html") more
+							article.text-center
+								header
+									a(href="blog-single.html")
+										img(src="assets/images/blog-post-3.jpg" alt="Blog Post 3")
+									h2 Fantastically juicy andfresh shortly just kataleya
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique risus in viverra porttitor. Cras consectetur, felis sit amet placerat commodo, sem erat sagittis neque, non ullamcorper ipsum dolor eu enim. Cras tincidunt bibendum sem, vitae commodo erat pretium nec. Pellentesque eu elit eleifend, porttitor enim vitae, eleifend diam. Duis dignissim congue sem, eu scelerisque lorem consequat sed. Curabitur sagittis rhoncus urna, eget aliquam erat condimentum a. Donec velit quam, feugiat nec dapibus nec, pretium ut tellus. Nulla vulputate ut ante non pulvinar.
+								.post-meta
+									ul
+										li
+											i.fa.fa-user
+											| posted by Admin
+										li
+											i.fa.fa-calendar-o
+											| 21th June 2014
+										li
+											i.fa.fa-comment-o
+											a(href="#") comments [ 3 ]
+										li
+											i.fa.fa-folder-o
+											a(href="#") Carrer 
+											| / 
+											a(href="#") Photography 
+											| / 
+											a(href="#") Post
+								a.btn.btn-md(href="blog-single.html") more
+
+			section.load-more.text-center
+				.container
+					.row
+						button.btn.btn-md.secondary load-more
+
+			section.jumbotron.text-center
+				.container
+					h1 
+						span.color all you need
+						| , give it a go
+					a.btn.btn-md(href="#") buy kateleya
+
+			include footer

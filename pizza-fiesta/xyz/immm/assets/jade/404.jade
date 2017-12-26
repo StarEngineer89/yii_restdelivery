@@ -1,0 +1,34 @@
+doctype html
+html
+	include head
+	body.responsive.sticky-menu
+		-var current_page = '404';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include header
+
+			section.no-spacing
+				.container
+					.row
+						.col-md-12
+							.page-heading
+								h1 error 404
+
+								ul
+									li
+										a(href="index.html") home
+									li
+										span error 404
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							.error-404.text-center
+								h1 error 
+									em.color 404
+								h2 Don’t worry, you will get you back on track in no time
+								a(href="index.html" class="btn btn-lg") go back
+
+			include footer

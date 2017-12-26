@@ -1,0 +1,7 @@
+You have a new comment: 
+Customer: {customer}<br />
+Email: {email}<br />
+Subject: {subject}<br />
+Comment: {comment}<br />
+Rating: {rating}<br />
+View post: {post_link}<br />

@@ -1,0 +1,35 @@
+ul.widgets
+	li.widget-container
+		form(role="search" id="searchform" class="searchform")
+			div
+				input(type="text" name="s" id="s" placeholder="Search...")
+				button(type="submit" class="fa fa-search" id="searchsubmit")
+	li.widget-container
+		h2.widget-title text widget
+		div.textwidget Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya.
+	li.widget-container
+		h2.widget-title tags widget
+		div.tagcloud
+			a(href="#") web
+			a(href="#") design
+			a(href="#") html
+			a(href="#") art
+			a(href="#") photography
+			a(href="#") css
+			a(href="#") css
+			a(href="#") printing
+			a(href="#") html
+	li.widget-container
+		h2.widget-title tabs widget
+		ul.nav.nav-tabs.style-2
+			each val, index in ["Mission", "Projects"]
+				li(class=index === 0 ? 'active' : '')
+					a(href="#tab-" + index data-toggle="tab")
+						=val
+		.tab-content
+			each val, index in ["Mission", "Projects"]
+				.tab-pane(class=index === 0 ? 'active' : '' id="tab-" + index)
+					p Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya. 
+	li.widget-container
+		h2.widget-title flickr
+		.flickr-widget(data-account="52617155@N08")

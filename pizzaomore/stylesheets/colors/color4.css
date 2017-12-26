@@ -1,0 +1,218 @@
+/**
+  * Color
+  * Border Color
+  * Background Color  
+*/
+
+/* Color 
+-------------------------------------------------------------- */
+/* Color #34314c */
+ a,
+ a.link:hover,
+ h1, h2, h3, h4, h5, h6,
+ strong ,
+ .testimonial-author .author-info a:hover,
+ .tp-caption.title-slide,
+ .tp-caption.desc-slide,
+ .general-sidebar .widget.widget_text .textwidget .widget_title,
+ .general-sidebar .widget.widget_nav_menu ul.nav_menu > li > a.active,
+ .general-sidebar .widget.widget_nav_menu ul.nav_menu > li > a.active:before,
+ .flat-accordion.style1 .flat-toggle .toggle-title,
+ .title-training-programs,
+ .flat-tabs ul.menu-tabs li.active a,
+ .widget.widget_recent_entries a,
+ .flat-portfolio.portfolio-grid .portfolio .portfolio-item .portfolio-wrap .portfolio-info .portfolio-title a, 
+ .flat-portfolio.portfolio-grid-alt .portfolio .portfolio-item .portfolio-wrap .portfolio-info .portfolio-title a,
+ .portfolio-content-single .main-text .main-text-title,
+ .navigation.post-navigation .nav-links li a,
+ .blog .blog-post .entry-header .entry-title a, 
+ .blog-single .blog-post .entry-header .entry-title a,
+ .comments-area .comment-respond .comment-reply-title,
+ #mainnav-mobi ul > li > a
+ {
+	color: #34314c;
+}
+
+/* Color #47b8e0 */
+a:hover,
+#mainnav > ul > li > a.active,
+#mainnav > ul > li > a:hover,
+#header.upscrolled #mainnav > ul > li > a.active,
+#header.upscrolled #mainnav > ul > li > a:hover,
+.flat-title-button .title i,
+.iconbox .box-readmore a,
+.latest-post .entry-footer .entry-meta a:hover,
+.blog-posts .entry-footer .entry-meta a:hover,
+.list-about h4 span i,
+.testimonial-author .author-info,
+.testimonial-author .author-info a,
+a.link,
+.switcher-container h2 a.active:after,
+.info-icon i,
+.page-title .breadcrumbs ul.trail-items li a:hover,
+.scheme2,
+.flat-teammember .member .member-info .member-subtitle,
+.color-themes1,
+.widget.widget_recent_entries a:hover,
+.navigation .page-numbers:hover,
+.flat-portfolio.portfolio-grid .portfolio .portfolio-item .portfolio-wrap .portfolio-info .portfolio-title a:hover, 
+.flat-portfolio.portfolio-grid-alt .portfolio .portfolio-item .portfolio-wrap .portfolio-info .portfolio-title a:hover,
+.flat-portfolio.portfolio-masonry .portfolio .portfolio-item .portfolio-wrap .portfolio-info .portfolio-title a:hover,
+.navigation.post-navigation .nav-links li a span,
+.navigation.post-navigation .nav-links li a:hover,
+.blog .blog-post .entry-header .entry-title a:hover, 
+.blog-single .blog-post .entry-header .entry-title a:hover,
+.blog-post .entry-header .entry-time,
+.blog .blog-post .entry-header .entry-meta a:hover, 
+.blog-single .blog-post .entry-header .entry-meta a:hover,
+.woocommerce .products li .product-info .star-rating i, 
+.woocommerce-page .products li .product-info .star-rating i,
+.single-products .summary .product-rating .star-rating span i,
+.woocommerce-reviews #comments ul.commentlist li .star-rating span i,
+#mainnav-mobi ul > li > a:hover
+ {
+	color: #47b8e0;
+}
+
+/* Border Color
+-------------------------------------------------------------- */
+/* Border color #34314c */
+.sw-even a:hover,
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus, 
+input.input-text:focus {
+	border-color: #34314c ;
+}
+
+/* Border color #47b8e0 */
+#mainnav > ul > li > a.active,
+ul.flat-list li:before,
+.flat-portfolio.portfolio-grid-alt .portfolio .portfolio-item .portfolio-wrap:hover,
+.woocommerce .onsale:after, .woocommerce-page .onsale:after
+ {
+	border-color: #47b8e0 ;
+}
+
+/* Background Color
+-------------------------------------------------------------- */
+/* Background color #34314c */
+.top,
+.flat-button-slider:hover,
+#mainnav ul.submenu > li > a:hover,
+.top .top-navigator > ul > li > ul li a:hover,
+.go-top,
+.flat-button-slider.bg-button-slider-15416e,
+.imagebox .box-header:after,
+.imagebox .box-content:after,
+.iconbox .box-header .box-icon i,
+.quick-form,
+.blog-posts .entry-cover .entry-time,
+.flat-video-fancybox a:before,
+.owl-theme .owl-controls .owl-nav div:hover,
+.flat-testimonial .testimonial .testimonial-image:after,
+.footer,
+.sw-even a:hover,
+.tparrows.preview4:after,
+input[type="submit"]:hover,
+.button:hover,
+button[type="submit"]:hover,
+.header.header-v3 .header-wrap.style,
+.flex-direction-nav a:hover,
+.general-sidebar .widget.widget_nav_menu ul.nav_menu,
+.flat-accordion .flat-toggle .toggle-title,
+.history li h3,
+.flat-accordion.style1 .flat-toggle .toggle-title:before,
+.button.scheme2,
+.flat-tabs ul.menu-tabs,
+.widget.widget_tag_cloud .tagcloud a,
+ul.portfolio-filter,
+.flat-portfolio.portfolio-grid .portfolio .portfolio-item .portfolio-wrap .portfolio-thumbnail a, 
+.flat-portfolio.portfolio-grid-alt .portfolio .portfolio-item .portfolio-wrap .portfolio-thumbnail a,
+.flat-portfolio.portfolio-grid .portfolio .portfolio-item .portfolio-wrap .portfolio-thumbnail figcaption .project-buttons a:hover, 
+.flat-portfolio.portfolio-gridalt .portfolio .portfolio-item .portfolio-wrap .portfolio-thumbnail figcaption .project-buttons a:hover,
+.flat-portfolio.portfolio-masonry .portfolio .portfolio-item .portfolio-wrap .portfolio-info,
+.navigation.post-navigation .nav-links li a:after,
+.blog .blog-post .entry-content .readmore .more-link:hover, 
+.blog-single .blog-post .entry-content .readmore .more-link:hover,
+.blog-single .blog-post .entry-footer .entry-tags a,
+.btn-menu:before, 
+.btn-menu:after, 
+.btn-menu span
+ {
+	background-color: #34314c;
+}
+
+/* Background color #47b8e0 */
+#mainnav ul.submenu > li > a:before,
+.flat-button-slider,
+.go-top:hover,
+.top .top-navigator > ul > li > ul li a:before,
+.flat-button-slider.bg-button-slider-15416e:hover,
+.imagebox .box-header:before,
+.button,
+.iconbox:hover .box-header .box-icon i,
+.iconbox .box-readmore a:hover:before,
+.quick-form h4:after,
+input[type="submit"],
+button[type="submit"],
+.overlay.bg-18ba60,
+.blog-posts .entry-cover:hover .entry-time,
+.blog-posts .entry-content-wrap:after,
+.title-section.style1 .title:after,
+.flat-video-fancybox a:hover:before,
+.owl-theme .owl-controls .owl-nav div,
+.footer-widgets .widget.widget_nav_menu ul li:before,
+.header.header-v1 .flat-wrapper #mainnav > ul > li > a.active,
+#header.header.header-v2 #mainnav > ul > li > a.active,
+.header-v3 #mainnav > ul > li > a.active:after,
+.flex-direction-nav a,
+.sidebar-right .general-sidebar .widget.widget_nav_menu ul.nav_menu > li > a.active:after,
+.flat-counter .counter .counter-image i,
+ul.flat-list li:after,
+.history li .year-content:hover h3,
+.history li:after,
+.social-links.style1 a i:hover,
+.flat-clients .clients-text-title,
+.testimonial-content:after,
+.flat-accordion.style1 .flat-toggle .toggle-title.active:after,
+.button.scheme2:hover,
+.sidebar-left .general-sidebar .widget.widget_nav_menu ul.nav_menu > li > a.active:after,
+.flat-page-header .overlay,
+.flat-tabs ul.menu-tabs li.active a:before,
+.search-results article .counter,
+.widget .widget-title:before,
+.widget.widget_categories ul li a:before, 
+.widget.widget_pages ul li a:before, 
+.widget.widget_meta ul li a:before,
+.widget.widget_tag_cloud .tagcloud a:hover,
+.navigation .page-numbers.current,
+.flat-portfolio.portfolio-grid .portfolio .portfolio-item .portfolio-wrap .portfolio-thumbnail figcaption .project-buttons a, 
+.flat-portfolio.portfolio-grid-alt .portfolio .portfolio-item .portfolio-wrap .portfolio-thumbnail figcaption .project-buttons a,
+ul.portfolio-filter li.active a:after,
+.navigation.post-navigation .nav-links li a:hover:after,
+.blog .blog-post .entry-content .readmore .more-link, 
+.blog-single .blog-post .entry-content .readmore .more-link,
+.blog-single .blog-post .entry-footer .entry-tags a:hover,
+.comments-area .comment-respond .comment-reply-title:after,
+.woocommerce .onsale, .woocommerce-page .onsale,
+.woocommerce .woocommerce-pagination ul li .page-numbers.current, 
+.woocommerce-page .woocommerce-pagination ul li .page-numbers.current,
+.woocommerce-page .related h2:after,
+.btn-menu.active:before,
+.btn-menu.active:after
+ {
+	background-color: #47b8e0;
+}

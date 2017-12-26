@@ -1,0 +1,205 @@
+doctype html
+html
+	include head
+	body.menu-style-2.responsive.sticky-menu
+		-var current_page = 'pizza';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include order-menu
+			include header-pizza
+
+			div(id="home" class="parallax hidden-xs" style="background-image: url(assets/images/pizza-slider.jpg); width: 100%; height: 862px;")
+				div.ls-slide(data-ls="slidedelay: 4000; transition2d: 5,5;")
+					div.ls-l.text-center(style="top: 50%; left: 50%;")
+						h1
+							span.color pizza 
+							| to fill your soul 
+						h4.style-2
+							| you have to taste it
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center always fresh, don't miss it
+
+					.row
+						.col-md-12
+							.posts.blog
+								each val, index in ["firewood oven pizza is the best", "special offer for the whole family", "online order to your home"]
+									article.col-md-4.col-sm-6
+										a(href="blog-single.html")
+											img(alt="Recent Blog Post " + (index+1) src="assets/images/recent-blog-post-" + (index+1) + ".jpg")
+
+											.hover
+												i.fa.fa-cutlery
+										a(href="blog-single.html")
+											h2
+												=val
+										p  Proin ut tincidunt ante, eget pulvinar ante. Sed nec erat et felis placerat facilisis id tristique diam. Aliquam ut pellentesque lorem.
+			section
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2(id="pizzas").section-heading.text-center kataleya pizza menu
+					.row
+						div.col-md-offset-1.col-md-2.vertical
+							ul.nav.nav-tabs
+								each val, index in ["classic", "meat", "vegi", "spicy", "special", "family", "huge"]
+									li(class=index === 0 ? 'active' : '')
+										a(href="#tab-" + index data-toggle="tab")
+											=val
+						.tab-content.col-md-7
+							each val, index in ["soupes", "cold appetizers", "sea food", "pasta", "main course", "salads", "deserts"]
+								.tab-pane(class=index === 0 ? 'active' : '' id="tab-" + index)
+									.food-item.price-right
+										h3 pure arabica
+										p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+										h4.price
+											span $
+											| 2
+									.food-item.price-right
+										h3 brazilian mix
+										p onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+										h4.price
+											span $
+											| 4
+									.food-item.price-right
+										h3 just a cup of joy
+										p onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+										h4.price
+											span $
+											| 1
+									.food-item.price-right
+										h3 spunky morning
+										p onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+										h4.price
+											span $
+											| 3
+			section.style-2.jumbotron.parallax.text-center(id="pizza-statement-1" style="background-image: url(assets/images/pizza-statement-1.jpg);")
+				.container
+					h2 
+						| the last 
+						span.color restaurant 
+						| theme you’ll need
+					a.btn.btn-md(href="#") buy kateleya			
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center(id="pizzeria") kataleya inside
+
+						.col-md-5.col-md-offset-1
+							img(src="assets/images/offer.jpg" alt="Offers")
+						.col-md-5
+							h5
+								| what can 
+								span.color kataleya 
+								| offer
+							ul.list.icons
+								li 
+									i.fa.fa-cutlery
+									| we can acomodate 40 people
+								li
+									i.fa.fa-leaf
+									| fresh food every day, produced locally from our neightbours
+								li
+									i.fa.fa-trophy
+									| world renouned chefs with 20 years experience
+								li
+									i.fa.fa-glass
+									| need a romantic getaway, kateleya is for you
+								li
+									i.fa.fa-suitcase
+									| or maybe a business dinner, try us now
+								li
+									i.fa.fa-coffee
+									| or just come for a cupcontact us of exelent coffee
+			section.pizza-guy-wrapper
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2(id="order").section-heading.text-center place your order
+					.row.pizza-guy
+						img(alt="Delivery Man" class="visible-lg visible-md" src="assets/images/pizza-guy.jpg")
+						.col-md-6.col-md-offset-3
+							form(role="form" data-menu-order="content-form" class="box")
+								.form-group
+									input(type="text" placeholder="name" id="name")
+								.form-group
+									input(type="email" placeholder="email" id="email")
+								.form-group
+									input(type="tel" placeholder="phone" id="phone")
+								.form-group
+									input(type="text" placeholder="delivery address" id="address")
+								button(data-menu-order="content-form-submit" class="btn btn-md")
+									| choose your order	
+									i.fa.fa-arrow-right		
+			section.twitter.text-center(style="background-image: url(assets/images/twitter.jpg);")
+				.container
+					.row
+						h2 twitter feeds
+						.carousel.slide(id="twitter" data-twitter="AstudioTweet" data-ride="carousel")
+							.carousel-inner
+								| Loading tweets...
+							ol.carousel-indicators
+								li.active(data-target="#twitter" data-slide-to="0")
+								li(data-target="#twitter" data-slide-to="1")
+								li(data-target="#twitter" data-slide-to="2")
+						a.btn.btn-md(href="#") follow us
+
+
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center(id="contact") contact us
+
+					.row
+						.col-md-6
+							h3 contact details
+							p Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya.
+
+							ul.contact-info
+								li
+									i.fa.fa-home
+									| 445 Street, your address in Wherever you are
+								li
+									i.fa.fa-phone
+									| Phone: +386 40 555 666
+								li
+									i.fa.fa-print
+									| Fax: +386 10 555 66677
+								li
+									i.fa.fa-envelope
+									| Email: 
+									a(href="mailto:support@anpsthemes.com") support@anpsthemes.com
+						.col-md-6
+							form(role="form")
+								.form-group
+									input(type="email" placeholder="e-mail")
+								.form-group
+									select
+										option test
+								.form-group
+									input(type="tel" placeholder="phone")
+								.form-group
+									textarea(placeholder="message")
+								button(type="submit" class="btn btn-md") submit				
+			
+			section.map#map
+
+			section.jumbotron.text-center
+				.container
+					h2 
+						span.color all you need
+						| , give it a go
+					a.btn.btn-md(href="#") buy kateleya
+
+			include footer

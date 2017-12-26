@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="90c9e546-ab97-471f-90ce-a50c97bbdecb" name="www.yummytakeaways.co.uk" url="http://192.185.5.170">
+        <fileTransfer host="192.185.5.170" port="2222" rootFolder="/home3/yummydev" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="2222" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

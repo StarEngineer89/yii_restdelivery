@@ -1,0 +1,3 @@
+[18-Oct-2017 11:33:20 UTC] PHP Warning:  Missing argument 2 for encrypt(), called in /home4/yummytak/public_html/pepperspiripiri/xyz/test/index.php on line 8 and defined in /home4/yummytak/public_html/pepperspiripiri/xyz/test/encrypt-decrypt.php on line 28
+[18-Oct-2017 11:33:20 UTC] PHP Warning:  Missing argument 2 for decrypt(), called in /home4/yummytak/public_html/pepperspiripiri/xyz/test/index.php on line 9 and defined in /home4/yummytak/public_html/pepperspiripiri/xyz/test/encrypt-decrypt.php on line 63
+[18-Oct-2017 11:33:20 UTC] PHP Warning:  mcrypt_decrypt(): Received initialization vector of size 0, but size 16 is required for this encryption mode in /home4/yummytak/public_html/pepperspiripiri/xyz/test/encrypt-decrypt.php on line 83

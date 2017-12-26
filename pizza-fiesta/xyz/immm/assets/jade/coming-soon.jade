@@ -1,0 +1,20 @@
+doctype html
+html
+	include head
+	body.responsive.sticky-menu.coming-soon(style="background-image: url(assets/images/slider-1-background.jpg);")
+		-var current_page = 'coming soon';
+
+		div.site-wrapper.text-center
+			.coming-soon-content
+				div.site-logo.retina
+					a(href="index.html")
+						img(src="assets/images/logo.png" width="160" alt="Kataleya Logo")
+				h2 countdown to exciding new sensation for your taste buds
+				ul(class="countdown")
+
+		script(src="assets/javascript/jquery.js")
+		script(src="assets/javascript/countdown.js")
+		script.
+			jQuery('.countdown').countdown('2014/10/15', function(event) {
+				jQuery(this).html(event.strftime('<li><span>%D</span><label>days</label></li><li><span>%H</span><label>hours</label></li><li><span>%M</span><label>minutes</label></li><li><span>%S</span><label>seconds</label></li>'));
+			});

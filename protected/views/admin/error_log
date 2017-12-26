@@ -1,0 +1,2 @@
+[29-Sep-2017 18:19:18 America/Chicago] PHP Fatal error:  Class 'Yii' not found in /home4/yummytak/public_html/protected/views/admin/user-add.php on line 3
+[29-Sep-2017 18:19:38 America/Chicago] PHP Fatal error:  Class 'Yii' not found in /home4/yummytak/public_html/protected/views/admin/voucher-list.php on line 3

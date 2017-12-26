@@ -1,0 +1,60 @@
+// Site Header 
+header.site-header
+	.container
+		.row
+			// Site Logo: change the width to fit your logo size
+			div.site-logo.retina.pull-left
+				a(href="index.html")
+					img(src="assets/images/logo-dark.png" data-sticky="assets/images/logo.png" width="160" alt="Kataleya Logo")
+
+			// Site Navigation
+			nav.navbar.pull-right(role="navigation")
+				// Site Navigation Header: this part is required and is used on mobile.
+				.navbar-header
+					button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".site-navigation")
+						span.sr-only Toggle navigation
+						span.fa.fa-bars
+				// Site Navigation: main menu content
+				ul.site-navigation
+					li(class=current_page === 'index' ? 'active' : '')
+						a(href='#home') home
+						
+						ul.sub-menu
+							li
+								a(href="index.html") restaurant
+							li
+								a(href="index-pizza.html") pizza place
+							li
+								a(href="index-coffee.html") coffee shop
+					li
+						a(href='#coffee' class="dropdown-toggle" data-toggle="dropdown") coffee
+
+						ul.sub-menu
+							li(class=current_page === 'elements' ? 'active' : '')
+								a(href="elements.html") elements
+							li
+								a(href="portfolio.html") portfolio
+							li
+								a(href="404.html") error 404
+							li
+								a(href="search.html") search page
+							li
+								a(href="coming-soon.html" target="_blank") coming soon
+					li
+						a(href='#to-go') to go
+					li
+						a(href='#blends') blends
+					li(class=current_page === 'blog' ? 'active' : '')
+						a(href="blog.html") blog
+
+						ul.sub-menu
+							li(class=current_page === 'blog-sidebar' ? 'active' : '')
+								a(href="blog-sidebar.html") blog with sidebar
+							li(class=current_page === 'blog-masonry' ? 'active' : '')
+								a(href="blog-masonry.html") blog masonry
+							li(class=current_page === 'blog-3-columns' ? 'active' : '')
+								a(href="blog-3-columns.html") blog 3 columns	
+							li(class=current_page === 'blog-single' ? 'active' : '')
+								a(href="blog-single.html") blog article	
+					li
+						a(href='#contact') contact

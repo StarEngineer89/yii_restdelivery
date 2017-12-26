@@ -1,0 +1,66 @@
+// Including scripts
+// script(src="")
+
+input(id="site-url" type="hidden" value="http://anpsthemes.com/kataleya-html")
+
+footer.site-footer
+	.copyright
+		.container
+			.row
+				.col-sm-6
+					img(src="assets/images/footer-logo.png" alt="Footer Logo")
+				.col-sm-6
+					.social
+						each val in ["twitter", "facebook", "behance", "skype", "vimeo-square", "google-plus", "linkedin-square"]
+							a(class="fa fa-" + val href="#")
+
+script(src="assets/javascript/jquery.js")
+script(src="http://maps.google.com/maps/api/js?sensor=false")
+script(src="assets/javascript/gmap3.js")
+script(src="assets/javascript/jquery.cookie.js")
+script(src="assets/javascript/theme.js")
+script(src="assets/javascript/smoothscroll.js")
+script(src="assets/javascript/bootstrap/tab.js")
+script(src="assets/javascript/bootstrap/collapse.js")
+script(src="assets/javascript/bootstrap/alert.js")
+script(src="assets/javascript/bootstrap/carousel.js")
+script(src="assets/javascript/bootstrap/transition.js")
+script(src="assets/javascript/jquery.touchSwipe.js")
+script(src="assets/javascript/picturefill.js" async)
+script(src="assets/javascript/parallax.js")
+script(src="assets/javascript/imagesloaded.js")
+script(src="assets/javascript/isotope.js")
+script(src="assets/javascript/jflickrfeed.js")
+script(src="assets/javascript/jquery.prettyPhoto.js")
+
+// LayerSlider
+
+script(src="assets/javascript/greensock.js")
+script(src="assets/javascript/layerslider.transitions.js")
+script(src="assets/javascript/layerslider.kreaturamedia.jquery.js")
+
+// Colorpicker
+
+script(src="assets/javascript/colorpicker.js")
+
+script.
+	jQuery(function($) {
+		map('#map', '2 Elizabeth St, Melbourne', 14);
+
+		$("#no-clutter").parallax("50%", 0.6);
+		$("#home").parallax("50%", 0.6);
+		$("#coffee-statement-1").parallax("50%", 0.6);
+		$("#pizza-statement-1").parallax("50%", 0.6);
+	});
+
+script.
+	jQuery(function() {
+		jQuery('#home').layerSlider({
+			skin 				: 'kataleya',
+			skinsPath 			: 'assets/css/layerslider/skins/',
+			responsiveUnder		: 1200,
+			layersContainer 	: 1200,
+			responsive 			: true,
+			showCircleTimer		: false
+		});
+	});

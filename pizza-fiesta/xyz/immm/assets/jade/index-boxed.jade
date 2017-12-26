@@ -1,0 +1,217 @@
+include head
+body.menu-style-2.responsive.sticky-menu.boxed
+	-var current_page = 'index';
+
+	div.site-wrapper
+		include header
+
+		div(id="layerslider" style="width: 100%; height: 862px;")
+			div.ls-slide(data-ls="slidedelay: 1000;")
+				// slide background
+				img(src="assets/images/slider-1-background.jpg" class="ls-bg" alt="Slider Background")
+			div.ls-slide(data-ls="slidedelay: 1000;")
+				// slide background
+				img(src="assets/images/slider-1-background.jpg" class="ls-bg" alt="Slider Background")
+
+		section.style-2
+			.container
+				.row
+					.col-md-12
+						include mini-logo
+						h2.section-heading.text-center always fresh, don't miss it
+
+					.recent-posts
+						- for (var x = 1; x <= 6; x++)
+							article.col-md-4.col-sm-6
+								a(href="#")
+									img(src="assets/images/recent-portfolio-post-" + x + ".jpg")
+
+									.hover
+										i.fa.fa-cutlery
+										h2 fresh salad for a hot summer
+
+		section.container
+			.row
+				.col-md-12
+					include mini-logo
+					h2.section-heading.text-center kataleya food menu
+		
+				ul.nav.nav-tabs
+					each val, index in ["soupes", "cold appetizers", "sea food", "pasta", "main course", "salads", "deserts"]
+						li(class=index === 0 ? 'active' : '')
+							a(href="#tab-" + index data-toggle="tab")
+								=val
+				.tab-content
+					each val, index in ["soupes", "cold appetizers", "sea food", "pasta", "main course", "salads", "deserts"]
+						.tab-pane(class=index === 0 ? 'active' : '' id="tab-" + index)
+							.food-item.text-center
+								h3 fantastic tomato soupes
+								| onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+								h4.price
+									span $
+									| 4
+							.food-item.text-center
+								h3 chicken souge
+								| onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+								h4.price
+									span $
+									| 3,5
+							.food-item.text-center
+								h3 mushroom souge
+								| onion, carrot, celery, olive oil, tomato puree, sugar, bay leaves, vegetable stock
+								h4.price
+									span $
+									| 7
+		
+		section.jumbotron.style-2.text-center(style="background-image: url(assets/images/index-statement-1.jpg)")
+			.container
+				h1 
+					| no clutter 
+					span.color.style-2 only 
+					| what you need
+				a.btn.btn-md(href="#") buy kateleya
+
+
+		section.style-2
+			.container
+				.row
+					.col-md-12
+						include mini-logo
+						h2.section-heading.text-center kataleya inside
+
+					.col-md-5.col-md-offset-1
+						img(src="assets/images/offer.jpg" alt="Offers")
+					.col-md-5
+						h5
+							| what can 
+							span.color kataleya 
+							| offer
+						ul.list.icons
+							li 
+								i.fa.fa-cutlery
+								| we can acomodate 40 people
+							li
+								i.fa.fa-leaf
+								| fresh food every day, produced locally from our neightbours
+							li
+								i.fa.fa-trophy
+								| world renouned chefs with 20 years experience
+							li
+								i.fa.fa-glass
+								| need a romantic getaway, kateleya is for you
+							li
+								i.fa.fa-suitcase
+								| or maybe a business dinner, try us now
+							li
+								i.fa.fa-coffee
+								| or just come for a cup of exelent coffee
+			
+		section.container
+			.row
+				.col-md-12
+					include mini-logo
+					h2.section-heading.text-center make a reservation
+			.row
+				.col-md-6.col-md-offset-1
+					img(src="assets/images/reservation.jpg" alt="Reservation")
+				.col-md-4
+					form(role="form")
+						.form-group
+							.form-date
+								input(type="number" data-date="day" placeholder="22" min="1" max="31")
+								select(data-date="month")
+									option(val="1") January
+									option(val="2") February
+									option(val="3") March
+									option(val="4") April
+									option(val="5") May
+									option(val="6") June
+									option(val="7") July
+									option(val="8") August
+									option(val="9") September
+									option(val="10") October
+									option(val="11") November
+									option(val="12") December
+								input(type="number" data-date="year" placeholder="2014" min="2014" max="2015")
+								input(type="number" data-date="hour" placeholder="21" min="00" max="23")
+								input(type="number" data-date="minute" placeholder="00" min="00" max="59")
+						.form-group
+							.row
+								.col-md-8
+									input(type="text" placeholder="name")
+								.col-md-4
+									input(type="number" placeholder="how many?" min="1" max="15")
+						.form-group
+							input(type="email" placeholder="e-mail")
+						.form-group
+							input(type="tel" placeholder="phone")
+						.form-group
+							textarea(placeholder="message")
+						button(type="submit" class="btn btn-md") submit
+		
+
+		section.twitter.text-center(style="background-image: url(assets/images/twitter.jpg);")
+			.container
+				.row
+					h2 twitter feeds
+					.carousel.slide(id="twitter" data-ride="carousel")
+						.carousel-inner
+							.item.active
+								| dev team training on supporting our shiny new @elasticsearch infrastructure pic.twitter.com/67AEfXa40r
+							.item
+								| Finally Altus Wordpress is here, get it now!
+							.item
+								| I am very proud to report that Altus went over 100 sales in 10 days! Check our new WooCommerce update!
+						ol.carousel-indicators
+							li.active(data-target="#twitter" data-slide-to="0")
+							li(data-target="#twitter" data-slide-to="1")
+							li(data-target="#twitter" data-slide-to="2")
+					a.btn.btn-md(href="#") follow us
+
+
+		section.style-2
+			.container
+				.row
+					.col-md-12
+						include mini-logo
+						h2.section-heading.text-center contact us
+
+				.row
+					.col-md-6
+						h3 contact details
+						p Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya.
+
+						ul.contact-info
+							li
+								i.fa.fa-home
+								| 445 Street, your address in Wherever you are
+							li
+								i.fa.fa-phone
+								| Phone: +386 40 555 666
+							li
+								i.fa.fa-print
+								| Fax: +386 10 555 66677
+							li
+								i.fa.fa-envelope
+								| Email: 
+								a(href="mailto: support@anpsthemes.com") support@anpsthemes.com
+					.col-md-6
+						form(role="form")
+							.form-group
+								input(type="email" placeholder="e-mail")
+							.form-group
+								input(type="tel" placeholder="phone")
+							.form-group
+								textarea(placeholder="message")
+							button(type="submit" class="btn btn-md") submit				
+		
+		section.map#map
+
+		section.jumbotron.text-center
+			.container
+				h1 
+					span.color all you need
+					| , give it a go
+				a.btn.btn-md(href="#") buy kateleya
+
+		include footer

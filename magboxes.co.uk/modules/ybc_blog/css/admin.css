@@ -1,0 +1,60 @@
+
+.ybc-blog-panel .star {
+  position: relative;
+  top: -1px;
+  float: left;
+  width: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal; }
+
+.ybc-blog-panel  .star {
+  display: block; }
+  .star a {
+    display: block;
+    position: absolute;
+    text-indent: -5000px; }
+
+.ybc-blog-panel  div.star:after {
+  content: "\f006";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #777676; }
+
+.ybc-blog-panel  div.star.star_on {
+  display: block; }
+  div.star.star_on:after {
+    content: "\f005";
+    font-family: "FontAwesome";
+    display: inline-block;
+    color: #ef8743; }
+
+.ybc-blog-panel  div.star.star_hover:after {
+  content: "\f005";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #ef8743; }
+.ybc_paggination .links a{
+    display: inline-block;
+    padding: 3px;
+    font-size: 13px;
+}
+.bootstrap .ybc-blog-panel .table td.pointer {
+    cursor: default;
+}
+.icon-AdminYbcBlog:before{
+    content: "\f19a";
+}
+.ybc-panel h2{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.ybc-panel{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 8px 0;
+    width: 100%;
+}

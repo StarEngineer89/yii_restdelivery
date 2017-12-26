@@ -1,0 +1,414 @@
+doctype html
+html
+	include head
+	body.responsive.sticky-menu
+		-var current_page = 'elements';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include header
+
+			section.no-spacing
+				.container
+					.row
+						.col-md-12
+							.page-heading
+								h1 elements
+
+								ul
+									li
+										a home
+									li
+										a menu
+									li
+										span elements
+
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center button styles
+					.row
+						.col-md-12
+							button.btn.btn-lg big button
+							button.btn.btn-lg.success big button
+							button.btn.btn-lg(style="background-color: #3d9fc4;") big button
+							button.btn.btn-lg.danger big button
+					.row
+						.col-md-12
+							button.btn.btn-lg(style="background-color: #df47cf;") big button
+							button.btn.btn-lg.secondary big button
+							button.btn.btn-lg(style="background-color: #ab44e0;") big button
+							button.btn.btn-lg(style="background-color: #1e597e;") big button
+					.row
+						.col-md-12
+							button.btn.btn-md.secondary medium button
+							button.btn.btn-md.danger medium button
+							button.btn.btn-md.success medium button
+							button.btn.btn-md.style-2(style="color: #ff9c00;") medium button
+							button.btn.btn-md.style-2(style="color: #df47cf;") medium button
+							button.btn.btn-md.style-2(style="color: #3d9fc4;") medium button
+					.row
+						.col-md-12
+							button.btn.btn-sm.secondary small button
+							button.btn.btn-sm.danger small button
+							button.btn.btn-sm.success small button
+							button.btn.btn-sm.style-2(style="color: #ff9c00;") small button
+							button.btn.btn-sm.style-2(style="color: #df47cf;") small button
+							button.btn.btn-sm.style-2(style="color: #3d9fc4;") small button
+			section
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center accordion and tabs
+					.row
+						.col-md-6
+							ul.nav.nav-tabs.style-2
+								each val, index in ["soupes", "cold appetizers", "sea food", "pasta"]
+									li(class=index === 0 ? 'active' : '')
+										a(href="#tab-" + index data-toggle="tab")
+											=val
+							.tab-content
+								each val, index in ["soupes", "cold appetizers", "sea food", "pasta"]
+									.tab-pane(class=index === 0 ? 'active' : '' id="tab-" + index)
+										h5 fantastic tomato #{val}
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat arcu sit amet purus imperdiet elementum. Vestibulum ac nulla eget lectus auctor tempor eget ut nulla. Curabitur placerat mattis porta. Proin placerat dignissim risus vel bibendum. Vivamus volutpat accumsan nunc non vestibulum. 
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat arcu sit amet purus imperdiet elementum. Vestibulum ac nulla eget lectus auctor tempor eget ut nulla. Curabitur placerat mattis porta. Proin placerat dignissim risus vel bibendum. Vivamus volutpat accumsan nunc non vestibulum. 
+						.col-md-6
+							div(class="panel-group" id="accordion")
+								each val, index in ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
+									div(class="panel")
+										div(class="panel-heading")
+											h4(class="panel-title")
+												a(class=index === 0 ? '' : 'collapsed' data-toggle="collapse" data-parent="#accordion" href="#accordion-" + index)
+													=val
+										div(id="accordion-" + index class="panel-collapse collapse" + (index === 0 ? ' in' : ''))
+											div.panel-body
+												h5 fantastic tomato soupe
+												p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat arcu sit amet purus imperdiet elementum. Vestibulum ac nulla eget lectus auctor tempor eget ut nulla. Curabitur placerat mattis porta. Proin placerat dignissim risus vel bibendum. Vivamus volutpat accumsan nunc non vestibulum.
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center heading styles
+					.row
+						.col-md-5
+							h1 Heading style 1
+							h2 Heading style 1
+							h3 Heading style 1
+							h4 Heading style 1
+							h5 Heading style 1
+							h6 Heading style 1
+						.col-md-5
+							h1.style-2 Heading style 2
+							h2.style-2 Heading style 2
+							h3.style-2 Heading style 2
+							h4.style-2 Heading style 2
+							h5.style-2 Heading style 2
+							h6.style-2 Heading style 2
+
+			section
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center html styles
+					.row(style="margin-bottom: 69px;")
+						.col-md-12
+							| <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. <mark>Etiam placerat odio nec quam aliquet, vel consectetur neque varius</mark>. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. <em>Mauris rhoncus scelerisque</em> nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark class="style-2">Etiam placerat odio nec quam aliquet, vel consectetur neque varius</mark>. 	
+					.row
+						.col-sm-6
+							p.dropcaps Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet.
+						.col-sm-6
+							p.dropcaps.style-2 Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet.
+			
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center columns
+					.row(style="margin-bottom: 12px;")
+						.col-md-12
+							strong 1/1
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. 
+					.row(style="margin-bottom: 12px;")
+						.col-md-6
+							strong 1/2
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. 
+						.col-md-6
+							strong 1/2
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. 
+					.row(style="margin-bottom: 12px;")
+						.col-md-4
+							strong 1/3
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet. 
+						.col-md-4
+							strong 1/3
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet. 
+						.col-md-4
+							strong 1/3
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet. 
+					.row(style="margin-bottom: 12px;")
+						.col-md-3
+							strong 1/4
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh.
+						.col-md-3
+							strong 1/4
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh.
+						.col-md-3
+							strong 1/4
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh.
+						.col-md-3
+							strong 1/4
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh.
+					.row(style="margin-bottom: 12px;")
+						.col-md-2
+							strong 1/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque.
+						.col-md-2
+							strong 1/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque.
+						.col-md-2
+							strong 1/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque.
+						.col-md-2
+							strong 1/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque.
+						.col-md-2
+							strong 1/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque.
+						.col-md-2
+							strong 1/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque.
+					.row(style="margin-bottom: 12px;")
+						.col-md-2
+							strong 1/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum.
+						.col-md-10
+							strong 5/6
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. 
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. 				
+					.row
+						.col-md-4
+							strong 1/3
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum.
+						.col-md-8
+							strong 2/3
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. Phasellus lacinia nisi viverra purus dignissim elementum. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Mauris rhoncus scelerisque nibh, eget tincidunt felis gravida vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat odio nec quam aliquet, vel consectetur neque varius. Aliquam iaculis enim in ipsum pulvinar luctus. 
+			section
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center lists
+					.row
+						.col-md-3.col-sm-6
+							ul.list
+								li Lorem ipsum dolor sit amet, conse
+								li Aliquam iaculis enim in ipsum 
+								li Mauris rhoncus scelerisque nibh
+								li Etiam placerat odio nec quam 
+						.col-md-3.col-sm-6
+							ul.list.hand
+								li Lorem ipsum dolor sit amet, conse
+								li Aliquam iaculis enim in ipsum 
+								li Mauris rhoncus scelerisque nibh
+								li Etiam placerat odio nec quam 
+						.col-md-3.col-sm-6
+							ul.list.arrow
+								li Lorem ipsum dolor sit amet, conse
+								li Aliquam iaculis enim in ipsum 
+								li Mauris rhoncus scelerisque nibh
+								li Etiam placerat odio nec quam 
+						.col-md-3.col-sm-6
+							ul.list.circle-check
+								li Lorem ipsum dolor sit amet, conse
+								li Aliquam iaculis enim in ipsum 
+								li Mauris rhoncus scelerisque nibh
+								li Etiam placerat odio nec quam 
+
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center pricing-tables
+					.row
+						.col-md-4
+							.pricing-table
+								header
+									h2 first offer
+									span.currency $
+									span.price 10
+									div.date monthly
+								ul
+									li 1 big pizza
+									li plate for 5
+									li 3 drinks
+									li special service
+									li big salad
+								footer
+									button.btn.btn-md get it now
+						.col-md-4
+							.pricing-table.style-2
+								header
+									h2 best offer
+									span.currency $
+									span.price 20
+									div.date monthly
+								ul
+									li 1 big pizza
+									li plate for 5
+									li 3 drinks
+									li special service
+									li big salad
+								footer
+									button.btn.btn-md get it now
+						.col-md-4
+							.pricing-table
+								header
+									h2 third offer
+									span.currency $
+									span.price 30
+									div.date monthly
+								ul
+									li 1 big pizza
+									li plate for 5
+									li 3 drinks
+									li special service
+									li big salad
+								footer
+									button.btn.btn-md get it now
+			section
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center icons
+					.row
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-fire
+									h2 strikingly stylish
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-star
+									h2 star theme
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-book
+									h2 recipes for you
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+						.col-md-3.col-sm-6
+							div.icon
+								header
+									a(href="#")
+										.fa.fa-heart
+									h2 cooking with love
+								span wake your emotions with ampere
+								p Lorem ipsum dolor sit amet, <a href="#">consectetur adiping</a> elit. Etiam placerat odio nec quam aliquet, velsa consectetur neque varius. 
+			section.style-2
+				.container
+					.row
+						.col-md-12
+							include mini-logo-3
+							h2.section-heading.text-center pagination styles
+					.row
+						.col-md-6
+							ul.page-numbers.style-2
+								li
+									a.first.page-numbers(href="#")
+								li
+									a.prev.page-numbers(href="#")
+								li
+									span.page-numbers 1
+								li
+									a.page-numbers 2
+								li
+									a.page-numbers 3
+								li
+									a.page-numbers 4
+								li
+									a.page-numbers 5
+								li
+									a.page-numbers 6
+								li
+									span ...
+								li
+									a.page-numbers 12
+								li
+									a.next.page-numbers(href="#")
+								li
+									a.last.page-numbers(href="#")
+						.col-md-6
+							ul.page-numbers
+								li
+									a.prev.page-numbers(href="#") Prev
+								li
+									span.page-numbers 1
+								li
+									a.page-numbers 2
+								li
+									a.page-numbers 3
+								li
+									a.page-numbers 4
+								li
+									a.page-numbers 5
+								li
+									a.page-numbers 6
+								li
+									span ...
+								li
+									a.page-numbers 12
+								li
+									a.next.page-numbers(href="#") Next
+			section
+				.container
+					.row
+						.col-md-12
+							include mini-logo
+							h2.section-heading.text-center alert message
+					.row
+						.col-md-6
+							div.alert
+								button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+								i(class="fa fa-bell-o")
+								| Normal Message! Your Message Goes Here
+							div.alert.alert-warning
+								button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+								i(class="fa fa-exclamation")
+								| Warning Message! Your Message Goes Here
+							div.alert.alert-info
+								button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+								i(class="fa fa-info")
+								| Information Message! Your Message Goes Here
+						.col-md-6
+							div.alert.alert-success
+								button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+								i(class="fa fa-check")
+								| Success Message! Your Message Goes Here
+							div.alert.alert-useful
+								button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+								i(class="fa fa-lightbulb-o")
+								| Useful Message! Your Message Goes Here
+							div.alert.alert-normal
+								button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+								i(class="fa fa-hand-o-right")
+								| Normal Message! Your Message Goes Here
+			include footer-2

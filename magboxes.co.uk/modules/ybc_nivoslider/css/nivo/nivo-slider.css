@@ -1,0 +1,339 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+  background: none repeat scroll 0 0 #E45F56;
+  font-weight: bold;
+}
+.theme-default {
+  float: left;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+/**
+ * YourBesCode caption 
+ */
+ 
+.ybc-caption-wrapper {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.ybc-caption-frame{
+    height: 100%;
+}
+.ybc-caption-position-right{
+    float: right;
+}
+.ybc-caption-position-left{
+    float: left;
+}
+.ybc-caption-position-center{
+    margin: 0 auto!important;
+}
+.caption1, .caption2, .caption3 {
+  float: left;
+  margin-bottom: 2%;
+}
+.caption-span{
+    display:  inline-block;
+    color: #333;
+    float: left;
+}
+.caption1 .caption-span {
+  line-height: 1.7vw;
+  padding: 2% 4%;
+}
+.ybc-caption-text-left{
+    text-align: left;
+}
+.ybc-caption-text-right{
+    text-align: right;
+}
+.ybc-caption-text-center{
+    text-align: center;
+}
+.ybc-caption-type {
+  clear: left;
+  opacity: 0;
+  position: relative;
+}
+.caption4 {
+  padding-top: 10px;
+}
+.caption1{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.caption2 {
+  color: #E45F56;
+  font-weight: bold;
+}
+.caption3{
+    font-size: 14px;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    color: #DEDEDE;
+    padding: 5px 10px;
+}
+.caption3 .caption-span {
+  color: #666666;
+}
+.ybc-nivo-description{
+    display: none;
+}
+.ybc-nivo-slider-wrapper{
+    width: 100%;
+    min-height: 200px;
+}
+.caption-span > p {
+  clear: left;
+  float: left;
+}
+.caption-span span {
+  float: left;
+}
+#ybc-nivo-slider-wrapper h2 {
+  font-size: 1.5vw;
+  margin: 0;
+}
+#ybc-nivo-slider{
+    opacity: 0;
+}
+#ybc-nivo-slider-loader img{
+    width: 50px;
+}
+#ybc-nivo-slider-wrapper > #ybc-nivo-slider-loader {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ybc-nivo-slider-loader {
+  background: none repeat scroll 0 0 #F5F5F5;
+  display: table;
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.ybc-nivo-slider-loader #ybc-nivo-slider-loader-img {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (min-width: 480px) and (max-width: 767px){
+    .caption-span{
+        font-size: 14px;
+    }
+    .caption-span p{
+        font-size: 9px;
+    }
+}
+.caption-span{
+    font-size: 1.8vw;
+}
+
+.caption-span p{
+    font-size: 1.1vw;
+}
+.caption2 .caption-span {
+  background: none repeat scroll 0 0 rgba(228, 224, 205, 0.8);
+  color: #E45F56;
+  font-size: 1.4vw;
+  padding: 5px 10px;
+}
+.ie8 .caption2 .caption-span {
+  background: none repeat scroll 0 0 rgb(228, 224, 205);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  font-size: 15px;
+}
+@media (max-width: 767px){
+    .caption3 .caption-span {
+      font-size: 9px;
+    }
+}
+.caption3 .caption-span {
+  font-size: 1vw;
+}
+#ybc-nivo-slider{
+    opacity: 0;
+}
+#ybc-nivo-slider .ybc-nivo-link{
+    display: none;
+}
+#ybc-nivo-slider .ybc-nivo-link:first-child{
+    display: block;
+}
+#ybc-nivo-slider-loader img{
+    width: 50px;
+}
+#ybc-nivo-slider-wrapper > #ybc-nivo-slider-loader {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ybc-nivo-slider-loader {
+  background: none repeat scroll 0 0 #F5F5F5;
+  display: table;
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.ybc-nivo-slider-loader #ybc-nivo-slider-loader-img {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.caption-wrapper{
+    display: none;
+}
+@media (max-width: 767px){
+    .ybc-caption .caption2 .caption-span {
+        font-size: 10px;
+      font-size: 1.6vw;
+      line-height: 4vw;
+      padding: 0 5px;
+    }
+}
+@media (max-width: 479px){  
+    .ybc-caption .caption4 {
+      float: left;
+      padding-top: 0px;
+    }
+    .ybc-caption .caption-span {
+      font-size: 8px;
+    }
+    .caption3 .caption-span {
+      font-size: 7px;
+      line-height: 9px;
+    }
+    .caption3 {
+      padding: 0 5px;
+    }
+    .ybc-caption .caption1 .caption-span {
+      line-height: 2.4vw;
+      padding: 1vw;
+    }
+    .caption-span .button.btn {
+      font-size: 7px;
+      padding: 0;
+    }
+    .theme-default a.nivo-nextNav {
+      right: 4%;
+    }
+    .theme-default a.nivo-prevNav {
+      left: 4%;
+    }
+}

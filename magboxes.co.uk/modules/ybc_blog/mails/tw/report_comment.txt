@@ -1,0 +1,8 @@
+A blog comment is reported
+Comment ID: #{id_comment}<br />                            
+Subject: {subject}<br />
+Comment: {comment}<br />
+Rating: {rating}<br />
+Reporter: {reporter}<br />
+Reporter email: {email}<br />
+View post: {post_link}<br />

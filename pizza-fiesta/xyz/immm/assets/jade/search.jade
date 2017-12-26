@@ -1,0 +1,46 @@
+doctype html
+html
+	include head
+	body.responsive.sticky-menu
+		-var current_page = 'search';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include header
+
+			section.no-spacing
+				.container
+					.row
+						.col-md-12
+							.page-heading
+								h1 search results
+
+								ul
+									li
+										a(href="index.html") home
+									li
+										span search
+			section.style-2
+				.container
+					.row
+						.col-md-12
+
+							form(role="search" id="searchform" class="searchform")
+								div
+									input(type="text" name="s" id="s" placeholder="Didn’t find what you are looking for? You can always try again")
+									button(type="submit" class="fa fa-search" id="searchsubmit")
+
+							ul.search-posts
+								each val in ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id turpis quis.", "Curabitur et turpis rhoncus, feugiat leo sit amet, tempus erat.", "Suspendisse facilisis leo vitae neque pulvinar, ac tristique magna placerat.", "Mauris varius vitae dui et volutpat. Etiam porttitor et dui eget aliquet.", "Quisque placerat justo a adipiscing gravida. Suspendisse ut posuere ante, non congue lorem.", "Vestibulum consectetur dui at eros sodales, vel accumsan justo vehicula.", "Nam ullamcorper eros quis adipiscing adipiscing. Morbi scelerisque a quam non ullamcorper.", "Ut in luctus risus, ac rhoncus nulla. Nam ultricies sodales mauris, sed mattis libero vulputate a.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id turpis quis."]
+									li
+										a(href="#")
+											h4.style-2
+												i.fa.fa-check-square-o.color
+												= val
+							h2.search-heading.text-center
+								| results found for: 
+								em.color
+									| asdasdasdasdsad
+
+			include footer

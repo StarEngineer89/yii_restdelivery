@@ -1,0 +1,204 @@
+.ybc-widget-display-top-column .ybc-widget-item {
+  float: left;
+  padding: 0 15px;
+  width: 33.333%;
+}
+li.ybc-widget-item i {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  color: #cccccc;
+  float: left;
+  font-size: 23px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  width: 48px;
+}
+@media (min-width: 1200px){
+    .ybc-widget-display-top-column .ybc-widget-item {
+      float: left;
+      padding: 0 15px;
+      width: 37%;
+    }
+    .ie8 .ybc-widget-display-top-column .ybc-widget-item{
+        width: 33.33%;
+    }
+    .ybc-widget-display-top-column .ybc-widget-item:last-child {
+      width: 26%;
+    }
+}
+.ybc-widget-item img {
+  float: left;
+  margin-right: 10px;
+}
+.ybc-widget-display-right-column-product {
+  float: left;
+  width: 100%;
+}
+.ybc-widget-display-nav {
+  float: left;
+}
+.ybc-widget-display-nav .ybc-widget-item {
+  float: left;
+  margin-right: 10px;
+}
+.ybc-widget-display-top {
+  float: left;
+  margin: 10px 0;
+  width: 100%;
+}
+.ybc-widget-display-top-column .ybc-widget-item img {
+  float: left;
+  margin-right: 10px;
+}
+.ybc-widget-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.ybc-widget-display-top-column {
+  margin-bottom: 0;
+}
+.home_widget_top_column {
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+}
+#hook_home .ybc-widget-item {
+  float: left;
+  padding: 0 5px 0 15px;
+  width: 33.333%;
+}
+.ybc-widget-display-home .ybc_widget_content_hook {
+  background-color: #fff;
+  float: left;
+  padding-right: 15px;
+  width: 100%;
+}
+.ybc-widget-display-home {
+  margin-bottom: 40px;
+}
+.ybc-widget-display-home .ybc-widget-title {
+  color: #666;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.block_content h4 {
+  float: left;
+  width: 100%;
+}
+.block_content .ybc-widget-item {
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.block_content .ybc-widget-item img {
+  float: left;
+  margin-right: 10px;
+}
+.ybc-widget-ybc-footer-links .ybc-widget-title {
+  float: left;
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-right: 15px;
+}
+.ybc-widget-ybc-footer-links .ybc-widget-description li {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.ybc-widget-ybc-footer-links .ybc-widget-description li:last-child {
+  border-right: none;
+}
+.ybc-widget-ybc-footer-links .ybc-widget-description a {
+  float: left;
+  line-height: 12px;
+  padding: 0 8px;
+  text-transform: capitalize;
+}
+.ybc-widget-ybc-footer-links .ybc-widget-description {
+  clear: left;
+  float: left;
+}
+.ybc-widget-ybc-ybcpaymentlogo-hook .ybc-widget-description {
+  clear: left;
+  float: left;
+  margin-top: 10px;
+}
+.ybc-widget-ybc-ybcpaymentlogo-hook .ybc-widget-description p {
+  margin-bottom: 0;
+}
+.ybc-widget-ybc-footer-links li {
+  display: inline-block;
+  float: left;
+}
+.ybc-widget-ybc-footer-links {
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.footer_bottom_left {
+  float: left;
+}
+.ybc-widget-ybc-footer-links .ybc-widget-description > ul {
+  margin: 0 -10px;
+}
+#usefull_link_block li {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.ybc-widget-display-left-column-product {
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .ybc-widget-description {
+      clear: left;
+      float: left;
+      margin-top: 5px;
+      width: 100%;
+    }
+    .ybc-widget-title {
+      margin-top: 5px;
+    }
+    .ybc-widget-display-top-column .ybc-widget-item,
+    .ybc-widget-display-top-column .ybc-widget-item:last-child {
+      width: 33.333%;
+    }
+}
+@media (max-width:767px){
+    #hook_home .ybc-widget-item {
+      width: 100%;
+    }
+    .footer_bottom_left {
+      float: left;
+      width: 100%;
+    }
+    #payment_footer {
+      float: left;
+      margin-top: 10px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px){
+    .ybc-widget-display-top-column .ybc-widget-item,
+    .ybc-widget-display-top-column .ybc-widget-item:last-child {
+      width: 50%;
+      margin-bottom: 15px;
+    }
+    .ybc-widget-display-top-column .ybc-widget-item:nth-child(2n+1){
+        clear: left;
+    }
+}
+@media (max-width: 479px) {
+    .ybc-widget-display-top-column .ybc-widget-item,
+    .ybc-widget-display-top-column .ybc-widget-item:last-child {
+      width: 100%;
+      margin-bottom: 15px;
+      clear: left;
+    }
+    .ybc-widget-ybc-footer-links .ybc-widget-title {
+      display: none;
+    }
+}

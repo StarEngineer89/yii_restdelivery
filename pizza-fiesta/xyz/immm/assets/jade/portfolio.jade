@@ -1,0 +1,134 @@
+include head
+body.responsive
+	-var current_page = 'portfolio';
+
+	//include colorpicker
+
+	div.site-wrapper
+		include header
+
+		section.no-spacing
+			.container
+				.row
+					.col-md-12
+						.page-heading
+							h1 portfolio
+
+							ul
+								li
+									a(href="index.html") home
+								li
+									span portfolio		
+		section.style-2
+			.container
+				.row
+					.col-md-12
+						ul.filter.text-center
+							li
+								button.selected(data-filter="*") all
+							li
+								button(data-filter="salads") salads
+							li
+								button(data-filter="desserts") desserts
+							li
+								button(data-filter="meat") meat
+							li
+								button(data-filter="pasta") pasta
+
+					.posts.portfolio
+						article.col-md-4.col-xs-6.meat
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-1.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6.meat.salads
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-2.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6.meat
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-3.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6.desserts.salads
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-4.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-5.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6.salads.pasta
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-6.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6.meat.pasta
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-1.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6.meat.desserts
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-2.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+						article.col-md-4.col-xs-6.meat.desserts.pasta
+							a(href="portfolio-single.html")
+								img(src="assets/images/recent-post-3.jpg")
+
+								.hover
+									i.fa.fa-cutlery
+									h2 fresh salad for a hot summer
+		section
+			.container
+				.row
+					.col-md-12
+						ul.page-numbers
+							li
+								a.prev.page-numbers(href="#") Prev
+							li
+								span.page-numbers 1
+							li
+								a.page-numbers 2
+							li
+								a.page-numbers 3
+							li
+								a.page-numbers 4
+							li
+								a.page-numbers 5
+							li
+								a.page-numbers 6
+							li
+								span ...
+							li
+								a.page-numbers 12
+							li
+								a.next.page-numbers(href="#") Next
+		section.jumbotron.text-center
+			.container
+				h1 
+					span.color all you need
+					| , give it a go
+				a.btn.btn-md(href="#") buy kateleya
+
+		include footer

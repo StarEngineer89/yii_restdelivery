@@ -1,0 +1,97 @@
+.widget_sortable li{
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-color: #D4D4D4 #D4D4D4 #BCBCBC;
+    padding: 6px;
+    margin: 3px 0;
+    cursor: move;
+    background: #f6f6f6;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+    list-style: none;
+}
+.widget_heading{
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    background: #eee;
+}
+.widget_sortable{
+    padding: 5px;
+}
+.widget_hook {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  float: left;
+  margin: 10px 2.333% 10px 0;
+  width: 31%;
+}
+.widget_hook .widget_sortable li a:hover{
+    text-decoration: underline;
+}
+.widget_heading a .process-icon-new {
+  float: right;
+  font-size: 15px;
+  height: 25px;
+  line-height: 20px;
+  width: 25px;
+}
+.widget_heading > a {
+  float: right;
+}
+.widget_tool_buttons .delete {
+  color: #999999;
+  float: right;
+}
+.widget_tool_buttons .enable_disnable {
+  float: right;
+  margin-right: 10px;
+}
+.widget_tool_buttons .enable_disnable .icon-check {
+  background-color: #93CD60;
+  border: 1px solid #A6C964;
+  border-radius: 3px 3px 3px 3px;
+  color: white;
+  font-size: 10px;
+  padding: 1px;
+}
+.widget_tool_buttons .enable_disnable .icon-remove {
+  background-color: #E27C79;
+  border: 1px solid #D9534F;
+  border-radius: 3px 3px 3px 3px;
+  color: #F7E2E1;
+  font-size: 10px;
+  padding: 1px 2px;
+}
+.widget_tool_buttons {
+  float: right;
+}
+.widget_sortable{
+  min-height: 31px;
+}
+.widget_row{
+    width: 100%;
+    margin: 10px;
+}
+.ybc_clear{
+    clear: both;
+}
+
+.panel-heading .add_new_widget {
+  float: right;
+  line-height: 20px;
+  top: 0;
+}
+.panel-heading .widget_title {
+  float: left;
+}
+.panel a:hover {
+  text-decoration: none;
+}

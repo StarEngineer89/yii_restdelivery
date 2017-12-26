@@ -1,0 +1,115 @@
+doctype html
+html
+	include head
+	body.responsive.sticky-menu
+		-var current_page = 'blog-single';
+
+		//include colorpicker
+
+		div.site-wrapper
+			include header
+
+			section.no-spacing
+				.container
+					.row
+						.col-md-12
+							.page-heading
+								h1 blog
+
+								ul
+									li
+										a(href="index.html") home
+									li
+										a(href="blog.html") blog
+									li
+										span fantastically juicy, fresh shortly just delicious
+
+			section.blog-single
+				div.container
+					div.row
+						.col-md-9
+							article
+								header
+									a(href="#")
+										img(src="assets/images/blog-post-1.jpg" alt="Blog post 1")
+									h2 Fantastically juicy andfresh shortly just kataleya
+									.post-meta
+										ul
+											li
+												i.fa.fa-user
+												| posted by Admin
+											li
+												i.fa.fa-calendar-o
+												| 21th June 2014
+											li
+												i.fa.fa-comment-o
+												a(href="#comments") comments [ 3 ]
+											li
+												i.fa.fa-folder-o
+												a(href="#") Carrer 
+												| / 
+												a(href="#") Photography 
+												| / 
+												a(href="#") Post
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis diam mauris. Nam suscipit massa nec pretium ultrices. Quisque ante enim, fermentum sed euismod non, blandit sed erat. Nunc rhoncus porttitor elit nec eleifend. In fermentum, tortor vitae commodo euismod, metus leo vehicula velit, sit amet dignissim dui lorem et elit.
+								blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum enim, fermentum eu dui eget, vestibulum vulputate massa. Etiam congue commodo dui, ut imperdiet risus. Morbi molestie tortor nec consequat dictum. Pellentesque vitae tellus tellus. 
+								h5 Fantastically juicy, fresh shortly just delicious. 
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum enim, fermentum eu dui eget, vestibulum vulputate massa. Etiam congue commodo dui, ut imperdiet risus vestibulum eu. Morbi molestie tortor nec consequat dictum. Pellentesque vitae tellus tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer et ante quis odio convallis tristique quis ut ligula. Donec consequat molestie urna quis blandit. Vestibulum suscipit risus neque, sed pellentesque ipsum eleifend sed. In nec urna in leo vestibulum lacinia. Nullam hendrerit quis diam vitae vulputate. Proin nec ante purus. Donec non lacinia sapien.
+								div.author
+									img(src="assets/images/author-1.jpg" alt="Sara Doe")
+									div
+										h4 about author 
+											span.color Sara Doe
+										p Lorem ip dolor sit amet, consectetur adipiscing elit. Nunc ipsum enim, fermentum eu dui eget, vestibulum vulputate massa. Etiam congue commodo dui, ut imperdiet risus vestibulum eu. Morbi molestie tortor nec consequat dictum. Pellentesque vitae tellus tellus.
+						
+
+								h5.comments-title(id="comments") comments 
+									span.color (3)
+								ul.comment-list
+									li.comment.depth-1
+										article
+											img(src="assets/images/author-1.jpg" alt="Sara Doe")
+											header
+												h5 Sara Doe
+												span.date 25.3.2014
+												a.comment-reply-link(href="#") reply
+											p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum enim, fermentum eu dui eget, vestibulum vulputate massa. Etiam congue co modo dui, ut imperdiet risus vestibulum eu. Morbi molestie tortor nec consequat dictum. Pellentesque vitae tellus tellus. Vestibulum vulputate massa.
+										ul.children
+											li.comment.depth-2
+												article
+													img(src="assets/images/author-2.jpg" alt="John Doe")
+													header
+														h5 John Doe
+														span.date 25.3.2014
+														a.comment-reply-link(href="#") reply
+													p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum enim, fermentum eu dui eget, vestibulum vulputate massa. Etiam congue co modo dui, ut imperdiet risus vestibulum eu. Morbi molestie tortor nec consequat dictum. Pellentesque vitae tellus tellus. Vestibulum vulputate massa.
+									li.comment.depth-1
+										article
+											img(src="assets/images/author-3.jpg" alt="Jenny Smiles")
+											header
+												h5 Jenny Smiles
+												span.date 25.3.2014
+												a.comment-reply-link(href="#") reply
+											p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ipsum enim, fermentum eu dui eget, vestibulum vulputate massa. Etiam congue co modo dui, ut imperdiet risus vestibulum eu. Morbi molestie tortor nec consequat dictum. Pellentesque vitae tellus tellus. Vestibulum vulputate massa.
+						
+								h5.comments-submit-title leave a comment
+								form.comment-form
+									.row
+										.col-sm-6
+											input(type="email" placeholder="e-mail")
+										.col-sm-6
+											input(type="text" placeholder="phone")
+									.row
+										.col-sm-12
+											textarea(placeholder="message")
+									button(class="btn btn-md" data-form="submit") submit
+						aside.sidebar.col-md-3
+							include sidebar
+			section.jumbotron.text-center
+				.container
+					h1 
+						span.color all you need
+						| , give it a go
+					a.btn.btn-md(href="#") buy kateleya
+
+			include footer

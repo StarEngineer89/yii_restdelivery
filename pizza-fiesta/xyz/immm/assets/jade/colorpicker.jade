@@ -1,0 +1,54 @@
+//colorpicker
+div(class="colorpicker")
+	header
+		h2 Style selector
+	h2 Choose your layout style
+	.form-group
+		select(class="layout")
+			option(value="wide") Wide
+			option(value="boxed") Boxed
+
+	h2 Choose your menu style
+	.form-group
+		select(class="menu-style")
+			option(value="sticky") Sticky
+			option(value="default") Static
+
+	h2 Choose your colour scheme
+	ul(class="fields colors")
+		li(class="selected")
+			button(class="color-1")
+		li
+			button(class="color-2")
+		li
+			button(class="color-3")
+		li
+			button(class="color-4")
+		li(class="last")
+			button(class="color-5")
+
+	h2 Choose boxed background
+	ul(class="fields patterns")
+		li(class="selected")
+			button(class="pattern-1")
+		li
+			button(class="pattern-2")
+		li
+			button(class="pattern-3")
+		li
+			button(class="pattern-4")
+		li(class="last")
+			button(class="pattern-5")
+		li
+			button(class="pattern-6")
+		li
+			button(class="pattern-7")
+		li
+			button(class="pattern-8")
+		li
+			button(class="pattern-9")
+		li(class="last")
+			button(class="pattern-10")
+	div(class="colorpicker-close")
+		button
+//end colorpicker

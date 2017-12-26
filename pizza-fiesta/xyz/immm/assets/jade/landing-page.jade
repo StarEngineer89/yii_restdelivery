@@ -1,0 +1,66 @@
+doctype html
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+	title Kataleya - Restaurant One Page HTML Template
+	link(rel="shortcut icon" href="assets/images/favicon.png")
+
+	// Including stylesheets
+	link(rel="stylesheet" href="assets/css/bootstrap.css")
+	link(rel="stylesheet" href="assets/css/core.css")
+	link(rel="stylesheet" href="assets/css/theme.css")
+	link(rel="stylesheet" href="assets/css/font-awesome.css")
+	link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext")
+
+body.responsive.landing-page
+	div.site-wrapper
+
+		section.jumbotron.text-center(style="background-image: url(assets/images/landing-page/header.jpg);")
+			.container
+
+				img(src="assets/images/logo.png" width="160")
+				h1 3 
+					span.color fantastic layouts
+				h5.style-2 all the styles you need
+
+		section.style-2
+			.container.text-center
+				.row
+					.col-md-12.landing-icons
+						a(href="index-pizza.html")
+							i.fa.fa-coffee
+						a(href="index.html")
+							i.fa.fa-cutlery
+						a(href="index-coffee.html")
+							img(src="assets/images/landing-page-pizza-icon.png")
+
+						h5 choose your demo
+
+				.demo-selection
+					a(href="index-pizza.html").pizza-hover-wrapper
+						img(src="assets/images/landing-page/pizza.png" alt="Pizza demo")
+						img.hover(src="assets/images/landing-page/pizza-hover.png" alt="Pizza demo hover")
+						h5 your delicious pizza place
+					a(href="index.html").restaurant-hover-wrapper
+						img(src="assets/images/landing-page/restaurant.png" alt="Restaurant demo")
+						include mini-logo
+						h4 your perfect restaurant
+						.restaurant-hover
+							img(src="assets/images/landing-page/restaurant-hover.jpg" alt="Restaurant demo hover")
+					a(href="index-coffee.html").coffee-hover-wrapper
+						img(src="assets/images/landing-page/coffee.png" alt="Coffe demo")
+						img.hover(src="assets/images/landing-page/coffee-hover.png" alt="Coffee demo hover")
+						h5 your fantastic coffee shop
+
+				.demo-selection-mobile
+					a(href="index.html")
+						img(src="assets/images/landing-page/restaurant-landing-mobile.png" alt="Restaurant mobile demo")
+						h5 your perfect restaurant
+					a(href="index-pizza.html")
+						img(src="assets/images/landing-page/pizza-landing-mobile.png" alt="Pizza mobile demo")
+						h5 your delicious pizza place
+					a(href="index-coffee.html")
+						img(src="assets/images/landing-page/coffee-landing-mobile.png" alt="Coffee mobile demo")
+						h5 your fantastic coffee shop
+
+		.landing-page-footer

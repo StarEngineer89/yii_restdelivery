@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order Online  :: Lamp Restaurant | Order Online | Yummy Takeaways</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/zerogrid.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all"> 
+<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>  
+<script type="text/javascript" src="js/Forum_400.font.js"></script>
+<!-- <script type="text/javascript" src="js/atooltip.jquery.js"></script>  -->
+ <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+ <style type="text/css">
+ 	    body#page2{
+        overflow: initial !important;
+    }
+ </style>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<style type="text/css">
+		.slider_bg {behavior:url(js/PIE.htc)}
+	</style>
+<![endif]-->
+<!--[if lt IE 7]>
+	<div style='clear:both;text-align:center;position:relative'>
+		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+	</div>
+<![endif]-->
+</head>
+<body id="page2">
+<div class="body6">
+	<div class="body1">
+		<div class="main zerogrid">
+<!-- header -->
+			<header>
+				<h1><a href="index.html" id="logo"><img src="images/logo.png"/></a></h1>
+				<nav>
+					<ul id="top_nav">
+						<li><a href="index.html"><img src="images/icon_1.gif" alt=""></a></li>
+						<li><a href="#"><img src="images/icon_2.gif" alt=""></a></li>
+						<li class="end"><a href="Contacts.html"><img src="images/icon_3.gif" alt=""></a></li>
+					</ul>
+				</nav>
+				<nav>
+					<ul id="menu">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="OrderOnline.html">Order Online</a></li>
+							<li><a href="AboutUs.html">About Us</a></li>
+							<li><a href="OurGallery.html">Our Gallery</a></li>
+							<li><a href="Contacts.html">Contact Us</a></li>
+						</ul>
+				</nav>
+			</header>
+<!-- / header -->
+<!-- content -->
+		
+		</div>
+	</div>
+</div>
+<div class="body2">
+    	<div class="box" style="background-color:#a80002;padding:10px">	<h2 class="letter_spacing">Order <span>Online Here</span></h2></div>
+	<div class="clear"></div>
+            <div id="container">
+                <!-- start container -->
+                <iframe id="menu-iframe" src="https://www.yummytakeaways.co.uk/menu-lamp-restaurant?iframe"height="1080" width="100%"style="border:none;"></iframe>
+            <!-- end container -->
+            <div class="clear"></div>
+        </div>
+</div>
+<div class="body3">
+
+		<div class="main zerogrid">
+<!-- footer -->
+		<footer>
+				<div class="wrapper">
+					<section class="col-2-3"><div class="wrap-col">
+						<h3>Call Us: <span> +44 121 505 4250</span></h3>
+						Powered by <a  href="https://www.yummytakeaways.co.uk/" target="_blank">Yummy Takeaways</a>
+					</div></section>
+					<section class="col-1-3"><div class="wrap-col">
+						<h3>Follow Us </h3>
+						<ul id="icons">
+							<li><a href="" class="normaltip" title="Facebook"><img src="images/icon1.gif" alt=""></a></li>
+						</ul>
+					</div></section>
+				</div>
+				<!-- {%FOOTER_LINK} -->
+			</footer>
+<!-- / footer -->
+		</div>
+
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+ <script type='text/javascript' src='js/iframeResizer/iframeResizer.min.js'></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script>
+var lastScrollTop = 0;
+// $(window).scroll(function () { 
+// //You've scrolled this much:
+//     var windowHeight = jQuery(window).height();
+//     var scrollPosition = $(window).scrollTop();
+//     var topDistance = windowHeight + scrollPosition - 250+'px';
+//     var st = $(this).scrollTop();
+//     if (st > lastScrollTop){
+//        // downscroll code
+//     } else {
+//       // upscroll code
+//       topDistance = windowHeight + scrollPosition - 307+'px';
+//     }
+//      lastScrollTop = st;
+//     if((jQuery('#menu-iframe').height() - 598) <= $(window).scrollTop())   {
+//         $('#menu-iframe').contents().find('body .footer_button_cart').css({
+//         position: 'fixed',
+//         bottom: '0',
+//         top: 'initial',
+//         });
+//       }
+//       //debugger;
+//     else{
+//     	  console.log(topDistance);	
+//           $('#menu-iframe').contents().find('body .footer_button_cart').css({
+//             'position': 'absolute',
+//             'bottom': 'initial',
+//             'top': '0',
+//             'margin-top': topDistance,
+//         });
+//     }
+// });
+
+//Iframe Height
+$('#menu-iframe').on('load', function() {
+    setTimeout(function(){ 
+        var iframeContentHeight = jQuery('#menu-iframe').contents().find('.container').eq(1).height() + 200;
+        $('#menu-iframe').height(iframeContentHeight+'px');    
+        
+        var back_mobile = $('#menu-iframe').contents().find('.back-mobile').attr('href');
+        var containe_string = back_mobile.includes('?');
+        if(!containe_string){
+            var iframe_url = back_mobile.split('?');
+            //Add the iframe parameter in last if in case not in Back button
+            if(iframe_url.length == 1){
+               $('#menu-iframe').contents().find('.back-mobile').attr('href', '/menu-curryparadise?iframe');
+            }
+        }
+    }, 1000);
+});
+
+var isOldIE = (navigator.userAgent.indexOf("MSIE") !== -1); // Detect IE10 and below
+iFrameResize({ log: false, heightCalculationMethod: isOldIE ? 'max' : 'bodyOffset', warningTimeout: 0}, '#menu-iframe');
+</script>
+</body>
+</html>

@@ -1,0 +1,805 @@
+[2017-09-21 12:34:44] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:35:04] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:35:04] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:35:36] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:35:36] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:35:38] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:35:38] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:36:07] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:36:07] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:36:26] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:36:26] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:36:44] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:36:44] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:37:03] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:37:03] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:37:22] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:37:22] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:37:49] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:37:49] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:38:04] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:38:04] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:38:18] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:38:18] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:38:39] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:38:39] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:38:58] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:38:58] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:39:18] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:39:18] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:39:39] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:39:39] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:39:59] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:39:59] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:40:18] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:40:18] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:40:39] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:40:39] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:40:59] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:40:59] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:41:17] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:41:17] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:41:40] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:41:40] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:41:58] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:41:58] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:42:18] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:42:18] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:42:38] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:42:38] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:43:00] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:43:00] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:43:19] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:43:19] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:44:03] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:44:03] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:44:10] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:44:10] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:44:18] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:44:18] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:44:43] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:44:43] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:44:58] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:44:58] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:45:18] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:45:18] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+
+[2017-09-21 12:45:48] Error: exception 'Sitecake\Exception\Http\UnauthorizedException' with message '401 Unauthorized : Unauthorized access' in /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php:69
+Stack trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+[2017-09-21 12:45:48] Error: (Sitecake\Exception\Http\UnauthorizedException) - 401 Unauthorized : Unauthorized access
+Stack Trace:
+#0 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/Sitecake/Dispatcher.php(43): Sitecake\Dispatcher->execute(Object(Sitecake\Services\Session\SessionService), 'alive', Object(Symfony\Component\HttpFoundation\Request))
+#1 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(16): Sitecake\Dispatcher->dispatch(Object(Symfony\Component\HttpFoundation\Request))
+#2 [internal function]: {closure}(Object(Silex\Application), Object(Symfony\Component\HttpFoundation\Request))
+#3 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(153): call_user_func_array(Object(Closure), Array)
+#4 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#5 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(496): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#6 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/vendor/silex/silex/src/Silex/Application.php(477): Silex\Application->handle(Object(Symfony\Component\HttpFoundation\Request))
+#7 /home4/yummytak/public_html/loungeindia/sitecake/2.4.5/src/app.php(43): Silex\Application->run()
+#8 {main}
+
+

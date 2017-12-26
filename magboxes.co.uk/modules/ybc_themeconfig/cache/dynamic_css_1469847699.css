@@ -1,0 +1,253 @@
+body{font-family: Lato;}h1,h2,h3,h4,h5,h6{font-family: Oswald;}.ybc_full_bg_breadcrum{background-image: url('/sang/whisper/modules/ybc_themeconfig/images/config/128fb9cff82aa778278947e3eb26c87887fddceb.png');}
+/*no color*/
+body.ybc-skin-custom .button *,
+body.ybc-skin-custom .btn *{
+    background: transparent!important;
+}
+
+/**/
+body.ybc-skin-custom{
+    /*background: #fff!important;*/
+}
+body.ybc-skin-custom #toggle-nav .icon-bar, 
+body.ybc-skin-custom #add_to_cart .exclusive, 
+body.ybc-skin-custom#order-opc .page-heading.step-num span,
+body.ybc-skin-custom .button-search-menu, 
+body.ybc-skin-custom .page-heading.step-num > span.number-step,
+body.ybc-skin-custom .ybc-menu > li > a:before,
+body.ybc-skin-custom ul.pagination li.active > span span,
+body.ybc-skin-custom .button, 
+body.ybc-skin-custom button,
+body.ybc-skin-custom .btn,
+body.ybc-skin-custom .ajax_add_to_cart_button span,
+body.ybc-skin-custom .box-info-product .exclusive,
+body.ybc-skin-custom .tab-content .owl-theme .owl-controls .owl-buttons div,
+body.ybc-skin-custom .ybc-menu-layout-light .ybc-menu .ybc-menu-item-link:hover > span:first-child::before,
+body.ybc-skin-custom .ybc-menu-layout-light .ybc-menu li:hover > .ybc-menu-item-link > span:first-child::before,
+body.ybc-skin-custom .btn-default:hover, 
+body.ybc-skin-custom .btn-default:focus, 
+body.ybc-skin-custom .largeblog .read_more:hover,
+body.ybc-skin-custom .btn-default:active, 
+body.ybc-skin-custom .btn-default.active,
+body.ybc-skin-custom .ybc-widget-ybc-footer-links li a span:hover i,
+body.ybc-skin-custom .product-image-container .quick-view,
+body.ybc-skin-custom .button.ajax_add_to_cart_button,
+body.ybc-skin-custom .button-container .functional-buttons,
+body.ybc-skin-custom .product-box-content .button-container .quick-view,
+body.ybc-skin-custom #footer #newsletter_block_left .form-group .button-small,
+body.ybc-skin-custom.ybc-layout-layout2 .title_block_home::before, 
+body.ybc-skin-custom .title_alltab_home::before,
+body.ybc-skin-custom.ybc-layout-layout3 .ybc-widget-ybc-custom-2 li.ybc-widget-item i,
+body.ybc-skin-custom .layout_3 .ajax_cart_quantity,
+body.ybc-skin-custom ul.step li.step_current::before, 
+body.ybc-skin-custom ul.step li.step_current::after,
+body.ybc-skin-custom ul.step li.step_done::before, 
+body.ybc-skin-custom ul.step li.step_done::after,
+body.ybc-skin-custom .ui-slider-horizontal .ui-slider-range,
+body.ybc-skin-custom #layered_block_left .ui-state-default, 
+body.ybc-skin-custom #layered_block_left .ui-widget-content .ui-state-default, 
+body.ybc-skin-custom #layered_block_left .ui-widget-header .ui-state-default,
+body.ybc-skin-custom .title_block_home::before,
+body.ybc-skin-custom #footer h4::before,
+body.ybc-skin-custom .contact_store_information_left i,
+body.ybc-skin-custom div.uploader span.action,
+body.ybc-skin-custom li.active > .title_tab_home::before,
+body.ybc-skin-custom .footer-container #footer #social_block ul li a:hover i,
+body.ybc-skin-custom .button-container .compare .add_to_compare,
+body.ybc-skin-custom .productscategory_h3.page-product-heading:before,
+body.ybc-skin-custom .top-pagination-content ul.pagination li.active > span, 
+body.ybc-skin-custom .bottom-pagination-content ul.pagination li.active > span,
+body.ybc-skin-custom #footer .ybc-theme-panel-inner #ybc_tc_float_header li.active,
+body.ybc-skin-custom .product-box-content .button-container .compare,
+body.ybc-skin-custom #search_block_top .search_block_top_fixed.open .button-search{
+    background: #00bdb7;
+    color: #fff;
+}
+
+
+body.ybc-skin-custom .functional-buttons div.compare,
+body.ybc-skin-custom .functional-buttons div.wishlist,
+body.ybc-skin-custom .ybc-theme-panel-bg.active,
+body.ybc-skin-custom .htmlcontent-item-link-wrap .item-title span,
+body.ybc-skin-custom .title_tab_product li a.selected:after,
+body.ybc-skin-custom .ybc-blog-post-footer .read_more,
+body.ybc-skin-custom .title_cat,
+body.ybc-skin-custom .button, 
+body.ybc-skin-custom button,
+body.ybc-skin-custom .btn,
+body.ybc-skin-custom #wishlist_button_nopop:hover,
+body.ybc-skin-custom .box-sharing-button li a:hover,
+body.ybc-skin-custom #search_block_top #search_query_top:focus,
+body.ybc-skin-custom .btn-default:hover, 
+body.ybc-skin-custom .btn-default:focus, 
+body.ybc-skin-custom .btn-default:active, 
+body.ybc-skin-custom .btn-default.active,
+body.ybc-skin-custom .footer_bottom,
+body.ybc-skin-custom .largeblog .read_more,
+body.ybc-skin-custom.ybc-layout-layout3 .ybc-widget-ybc-custom-2 .ybc_links_page_home,
+body.ybc-skin-custom .ui-slider-horizontal .ui-slider-range,
+body.ybc-skin-custom .header-container,
+body.ybc-skin-custom .smallwidth .ybc-blog-home-content-show .read_more:hover,
+body.ybc-skin-custom #subcategories ul li:hover .subcategory-image a,
+body.ybc-skin-custom #search_block_top.search_layout_2 .search_block_top_fixed #search_query_top, 
+body.ybc-skin-custom #search_block_top.search_layout_3 .search_block_top_fixed #search_query_top,
+body.ybc-skin-custom .search_block_top_content{
+    border-color: #00bdb7;
+}
+
+body.ybc-skin-custom .scroll_top::before,
+body.ybc-skin-custom #view_scroll_right::before,
+body.ybc-skin-custom .scroll_top::after{
+    border-color: transparent transparent #00bdb7;
+}
+body.ybc-skin-custom .theme-default a.nivo-prevNav::after,
+body.ybc-skin-custom .product_layout_2 .owl-controls .owl-prev::before,
+body.ybc-skin-custom .ybc-theme-panel-btn,
+body.ybc-skin-custom .product-container .tooltip:before{
+    border-color: transparent transparent transparent #00bdb7;
+}
+body.ybc-skin-custom .theme-default a.nivo-nextNav::after,
+body.ybc-skin-custom .product_layout_2 .owl-controls .owl-next::before {
+  border-color: transparent #00bdb7 transparent transparent;
+}
+body.ybc-skin-custom #view_scroll_left::before,
+body.ybc-skin-custom .header-container::before{
+    border-color: #00bdb7 transparent transparent;
+}
+
+body.ybc-skin-custom#my-account ul.myaccount-link-list li a i,
+body.ybc-skin-custom#category ul.product_list .functional-buttons div.wishlist a:before,
+body.ybc-skin-custom#category ul.product_list .functional-buttons div.compare a:before,
+body.ybc-skin-custom #search_block_top .btn.button-search:hover:before,
+body.ybc-skin-custom #home-page-tabs > li.active a, 
+body.ybc-skin-custom #home-page-tabs > li a:hover,
+body.ybc-skin-custom #tc-reset:hover, 
+body.ybc-skin-custom #wishlist_button:before, 
+body.ybc-skin-custom #currencies-block-top div.current:hover:after,
+body.ybc-skin-custom #currencies-block-top div.current:hover,
+body.ybc-skin-custom #languages-block-top div.current:hover:after,
+body.ybc-skin-custom #languages-block-top div.current:hover,
+body.ybc-skin-custom #languages-block-top div.current:hover span,
+body.ybc-skin-custom #ybc_tc_layout li.active::before,
+/*body.ybc-skin-custom ul.product_list .functional-buttons div.wishlist a:before,
+body.ybc-skin-custom ul.product_list .functional-buttons div.compare a:before,*/
+body.ybc-skin-custom h3.page-product-heading:hover::before,
+body.ybc-skin-custom a:hover,
+body.ybc-skin-custom .favourites i,
+body.ybc-skin-custom .box-info-product a.add_to_compare_product:before,
+body.ybc-skin-custom .ybc-theme-panel-box.tc-reset > span:hover:before,
+/*body.ybc-skin-custom .theme-default a.nivo-nextNav:before,
+body.ybc-skin-custom .theme-default a.nivo-prevNav:before,
+body.ybc-skin-custom .shopping_cart span.ajax_cart_quantity,*/
+body.ybc-skin-custom .content_sortPagiBar .display li.selected i, 
+body.ybc-skin-custom .content_sortPagiBar .display_m li.selected i,
+body.ybc-skin-custom .pb-left-column #image-block #view_full_size .span_link:hover::after,
+body.ybc-skin-custom .sidebar-post-type-default #ybc-blog-posts-latest-list .be-categories > a, 
+body.ybc-skin-custom .sidebar-post-type-default .ybc-blog-posts-popular-list .be-categories > a,
+body.ybc-skin-custom #tab_product_page .nav-tabs > li.active a h3,
+body.ybc-skin-custom #product_comments_block_extra div.star_on:after,
+body.ybc-skin-custom div.star.star_on::after,
+body.ybc-skin-custom div.star.star_hover:after,
+body.ybc-skin-custom .caption2 .caption-span,
+body.ybc-skin-custom .ybc-blog-related-posts-meta-categories > a,
+body.ybc-skin-custom .be-tag-block .be-tags a,
+body.ybc-skin-custom .product-name:hover, 
+body.ybc-skin-custom a:hover,
+body.ybc-skin-custom #productscategory_list .price,
+body.ybc-skin-custom .footer-container #footer a:hover,
+body.ybc-skin-custom .read_more, 
+body.ybc-skin-custom .price.product-price,
+body.ybc-skin-custom .cart-info .price,
+body.ybc-skin-custom .toogle_search_top:hover:before,
+body.ybc-skin-custom .homeblog .ybc_title_block:hover,
+body.ybc-skin-custom .ybc-menu-layout-light .ybc-menu .ybc-menu-item-link:hover > span,
+body.ybc-skin-custom .be-categories > a,
+body.ybc-skin-custom .breadcrumb,
+body.ybc-skin-custom .our_price_display,
+body.ybc-skin-custom #layer_cart .layer_cart_product .title,
+body.ybc-skin-custom .smallwidth .ybc-blog-home-content-show .read_more:hover,
+body.ybc-skin-custom .ybc-menu li:hover > .ybc-menu-item-link,
+body.ybc-skin-custom .shopping_cart:hover > a:first-child,
+body.ybc-skin-custom .owl-buttons .owl-prev:hover::before, 
+body.ybc-skin-custom .owl-buttons .owl-next:hover::before, 
+body.ybc-skin-custom .owl-nav .owl-prev:hover::before, 
+body.ybc-skin-custom .owl-nav .owl-next:hover::before,
+body.ybc-skin-custom .ybc-menu-layout-light .ybc-menu .ybc-menu-item-link.active > span,
+body.ybc-skin-custom .fancybox-skin .fancybox-close,
+body.ybc-skin-custom #layer_cart .cross,
+body.ybc-skin-custom .search_block_top_close.in_content::before,
+body.ybc-skin-custom .ybc-newsletter-popup.ynpt8 .ynp-close::before,
+body.ybc-skin-custom #categories_block_left li a.selected,
+body.ybc-skin-custom .search_block_top_fixed.open .search_block_top_content::before{
+    color: #00bdb7;
+}
+
+
+/*color 3- hover*/
+body.ybc-skin-custom #wishlist_button:hover:before, 
+/*body.ybc-skin-custom ul.product_list .product-image-container .quick-view:hover,
+body.ybc-skin-custom ul.product_list .functional-buttons div.wishlist a:hover:before,
+body.ybc-skin-custom ul.product_list .functional-buttons div.compare a:hover:before,*/
+body.ybc-skin-custom .shopping_cart span.ajax_cart_quantity:hover,
+body.ybc-skin-custom .favourites i:hover,
+body.ybc-skin-custom .btn.button-plus:hover, 
+body.ybc-skin-custom .btn.button-minus:hover,
+body.ybc-skin-custom .fancybox-skin .fancybox-close:hover,
+body.ybc-skin-custom #layer_cart .cross:hover,
+body.ybc-skin-custom .search_block_top_close.in_content:hover::before,
+body.ybc-skin-custom .ybc-newsletter-popup.ynpt8 .ynp-close:hover::before{
+    color: #00e0d3;
+}
+body.ybc-skin-custom ul.product_list .product-image-container .quick-view:hover,
+body.ybc-skin-custom ul.product_list .functional-buttons div.wishlist a:hover:before,
+body.ybc-skin-custom #productscategory_list .product-box-content .button-container .quick-view:hover,
+body.ybc-skin-custom ul.product_list .functional-buttons div.compare a:hover:before,
+body.ybc-skin-custom #footer #newsletter_block_left .form-group .button-small:hover,
+body.ybc-skin-custom .button-container .compare .add_to_compare:hover,
+body.ybc-skin-custom .button-container .functional-buttons:hover,
+body.ybc-skin-custom .button:hover,
+body.ybc-skin-custom button:hover,
+body.ybc-skin-custom .ybc-blog-post-footer .read_more:hover{
+    background-color: #00e0d3;
+    color: #fff;
+}
+
+body.ybc-skin-custom #languages-block-top ul li,
+body.ybc-skin-custom #currencies-block-top ul li,
+body.ybc-skin-custom .instagram_item::before, 
+body.ybc-skin-custom .instagram_item_img::before,
+body.ybc-skin-custom .ybc-widget-item-wrap:hover::before,
+body.ybc-skin-custom .product-container .tooltip,
+body.ybc-skin-custom .product-box-content .tooltip,
+body.ybc-skin-custom .ac_results li:hover, 
+body.ybc-skin-custom .ac_results li.ac_over,
+body.ybc-skin-custom .ybc_shopmsg_alert,
+body.ybc-skin-custom .ybc_blog_skin_default .nivo-caption,
+body.ybc-skin-custom .theme-bar .nivo-directionNav .nivo-nextNav,
+body.ybc-skin-custom .theme-bar .nivo-directionNav .nivo-prevNav{
+    background-color: #69f2ff
+}
+body.ybc-skin-custom .product-container .tooltip:before,
+body.ybc-skin-custom .product-box-content .tooltip:before{
+    border-color: transparent transparent transparent #69f2ff
+}
+
+body.ybc-skin-custom .sale-label,
+body.ybc-skin-custom .ybc-menu-item.ybc_sale > .ybc-menu-item-link > span:first-child::after, 
+body.ybc-skin-custom .ybc-menu-item.ybc_sale > span.ybc-menu-item-no-link:first-child::after{
+    background-color: #8a9d00
+}
+
+body.ybc-skin-custom .ybc-menu-item.ybc_new > .ybc-menu-item-link > span:first-child::after, 
+body.ybc-skin-custom .ybc-menu-item.ybc_new > span.ybc-menu-item-no-link:first-child::after,
+body.ybc-skin-custom .new-label{
+    background-color: #ff75ae
+}
+
+body.ybc-skin-custom .ybc-menu-item.ybc_hot > .ybc-menu-item-link > span:first-child::after, 
+body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-child::after{
+    background-color: #e7e000
+}
+
+
+

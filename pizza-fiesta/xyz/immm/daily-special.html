@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<title>pizza-fiesta | Yummy Takeaways</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Leckerli+One' />	
+<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Viga' />
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/Isotope.css" />
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+<link rel="stylesheet" type="text/css" href="style.css"   />
+<link rel="stylesheet" type="text/css" href="css/responsive.css"  />
+<!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--Fullscreen Image Start-->
+<img id="full-screen-background-image" src="images/slider-img-2.jpg" alt="img" />
+<!--Fullscreen Image End-->
+
+<!--Logo Start-->
+<section id="logo" style="margin-top:20px">
+	<a href="index.html"><img src="images/pizzafiesta_smaller.png"></a>
+   
+</section>
+<!--Logo End-->
+
+<!--Menu Start-->
+<nav class="menu nav_wrapper" id="myslidemenu">
+    <ul class="menu" id="jqueryslidemenu">
+        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="foodmenu.html"><i class="fa fa-cutlery"></i>Food Menu</a>
+        </li>
+       <!-- <li class="current"><a href="daily-special.html"><i class="fa fa-thumbs-o-up"></i>Daily Special</a></li>-->
+      
+        <li><a href="contact.html"><i class="fa fa-phone-square"></i>Contact</a></li>
+    </ul>
+</nav>
+<!--Menu End-->
+
+<!--Container Start-->
+<section  id="container-fluid">
+
+<section id="container" class="daily-special"> 
+    <h2>Today's Special Items</h2>
+    
+ <!--draggable silder start..-->
+<div id="owl-demo" class="owl-carousel">
+    <div class="item">
+        <div class="item-container">
+            <img src="images/ds-img-1.jpg" alt="Touch">
+            <span class="item_price">$20</span>
+            <a class="dragable-slider" data-gal="prettyPhoto[gallery2]" href="images/ds-img-1.jpg"></a>
+        </div>
+        <div class="slider_post_content"><h4>Diet Food</h4></div>
+    </div>
+    <div class="item">
+        <div class="item-container">
+            <img src="images/ds-img-2.jpg" alt="Touch">
+            <span class="item_price">$30</span>
+            <a class="dragable-slider" data-gal="prettyPhoto[gallery2]" href="images/ds-img-2.jpg"></a>
+        </div>
+        <div class="slider_post_content"><h4>Burger </h4></div>
+    </div>
+    <div class="item">
+        <div class="item-container">
+            <img src="images/ds-img-3.jpg" alt="Touch">
+            <span class="item_price">$48</span>
+            <a class="dragable-slider" data-gal="prettyPhoto[gallery2]" href="images/ds-img-3.jpg"></a>
+        </div>
+        <div class="slider_post_content"><h4>Spicy Pizza</h4></div>
+    </div>
+    <div class="item">
+        <div class="item-container">
+            <img src="images/ds-img-7.jpg" alt="Touch">
+            <span class="item_price">$18</span>
+            <a class="dragable-slider" data-gal="prettyPhoto[gallery2]" href="images/ds-img-4.jpg"></a>
+        </div>
+        <div class="slider_post_content"><h4>Roasted Wheat</h4></div>
+    </div>
+    <div class="item">
+        <div class="item-container">
+            <img src="images/ds-img-5.jpg" alt="Touch">
+            <span class="item_price">$35</span>
+            <a class="dragable-slider" data-gal="prettyPhoto[gallery2]" href="images/ds-img-5.jpg"></a>
+        </div>
+        <div class="slider_post_content"><h4>Chicken Noodles</h4></div>
+    </div>
+    <div class="item">
+        <div class="item-container">
+            <img src="images/ds-img-6.jpg" alt="Touch">
+            <span class="item_price">$10</span>
+            <a class="dragable-slider" data-gal="prettyPhoto[gallery2]" href="images/ds-img-6.jpg"></a>
+        </div>
+        <div class="slider_post_content"><h4>Soft Drinks</h4></div>
+    </div>
+</div>
+ <!--draggable silder end..-->
+ 
+ <!--contact form start..-->
+ <div  class="one-half">
+       <h2>BOOK A TABLE</h2>
+  <form id="contact-form" name="contact-form" action="reservation.php" method="post">
+
+          <div id="main">
+            <div id="response">
+          </div>
+            <p class="one-half"><input type="text" placeholder="Name" size="23" id="res_name" name="res_name"></p>
+            <p class="one-half-last"><input type="text" size="23" id="res_email" placeholder="Email" name="res_email"></p>
+            <p class="one-third"> <input type="text" placeholder="Phone" size="23" id="res_phone" name="res_phone"></p>
+            <p class="one-third"><input type="text" placeholder="Number Of Persons" size="23" id="res_persons" name="res_persons"></p>
+            <p class="one-third-last"><input type="text" value="" placeholder="Reservation On" id="res_date" name="res_date" class="res_date hasDatepicker"></p>
+            <p class="one-third"><input type="text" size="23" id="res_time" placeholder="Time" name="res_time"></p>
+            <p class="two-third-last"><input type="text" size="23" id="res_subject" placeholder="Subject" name="res_subject"></p>
+            <p class="fullwidth"><textarea placeholder="Your Message" rows="4" cols="30" id="res_message" name="res_message"></textarea></p>
+            <p><input type="submit" value="Mail Us" id="submit" name="submit" class="readmore readmore-1 readmore-1a"> 
+            <input type="reset" value="Clear" id="reset" name="reset" class="readmore readmore-1 readmore-1a">
+          </p>
+        </div>
+        </form>
+ </div>
+ <!--contact form end..-->
+ 
+ <!--sidebar start-->
+<aside class="one-half-last">
+    <h2>WHAT OUR CLIENT SAYS...</h2>
+<div class="testimonial_wrapper testmonial" >
+    <img src="images/team01.jpg" alt="Our Client" class="alignleft thumb-img" />
+    <div class="description">
+        <p>"Facilisis lacus donec vitae quis tincidunt velit. Phasellus semper leo non mauris fermentum fermentum" </p>
+        <h4>-Anna Maria</h4>
+    </div>
+</div>
+<div class="testimonial_wrapper testmonial">
+    <img src="images/team02.jpg" alt="Our Client" class="alignleft thumb-img" />
+    <div class="description">
+        <p>"Donec lacus facilisis vitae quis tincidunt velit. Phasellus fermentum semper leo non mauris fermentum mauris" </p>
+        <h4>-Brad Moller</h4>
+    </div>
+</div>
+<div class="testimonial_wrapper testmonial">
+    <img src="images/team03.jpg" alt="Our Client" class="alignleft thumb-img" />
+    <div class="description">
+        <p>"Semper facilisis lacus donec vitae quis tincidunt velit. Phasellus leo non mauris fermentum phasellus" </p>
+        <h4>-Jeena Woven</h4>
+    </div>
+</div>
+</aside>
+<!--sidebar End-->
+
+</section>
+
+</section>
+
+<!--Container End-->
+
+<!--Footer Start-->
+<footer style="height:auto">
+<div class="one-third">
+    <p class="copy-right">© 2017 All Rights Reserved by Pizza Fiesta</p>
+    
+</div>
+</div>
+<div class="one-third">
+     
+<p >We Accept Payment By:</p>
+    <img src="../assets/images/pyment-logo.jpg" style="max-width:180px; min-width:180px">
+</div>
+<div class="one-third-last" align="center">
+<p >Powered By:</p>
+    <a href="https://www.yummytakeaways.co.uk/" title="Yummy Takeaways" target="_blank"><img src="1497632763-logo (1).png" style="max-width:180px; min-width:180px"></a>
+</div>  
+</footer>
+<!--Footer End-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script>
+jQuery(document).ready(function($) {
+   'use strict';
+    
+$("#owl-demo").owlCarousel({ 
+autoPlay: false, //Set AutoPlay to 3 seconds 
+items : 4,
+itemsDesktop : [1199,3],
+itemsDesktopSmall : [979,3],
+pagination: false 
+});
+
+});
+</script>
+<script>
+jQuery(document).ready(function($) {
+   'use strict';
+$("a[data-gal^='prettyPhoto']").prettyPhoto({hook: 'data-gal'});
+});
+</script>
+
+</body>
+</html>

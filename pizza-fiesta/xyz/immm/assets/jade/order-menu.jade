@@ -1,0 +1,112 @@
+.order-menu-wrapper
+	button.close-order.fa.fa-cutlery
+	.order-menu
+		button.mobile-close ×
+		.order-header
+			include mini-logo
+			input(type="text" id="order-search" placeholder="search the menu")
+		section
+			h2.color.text-center meat pizzas
+			article.food-item.price-right(id="chicken-pizza")
+				header
+					h3 chicken pizza
+					h4.price
+						span $
+						| 4
+					div.quantity
+						button.minus -
+						span.num 0
+						button.plus +
+				p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+			article.food-item.price-right(id="pepperoni-pizza")
+				header
+					h3 pepperoni pizza
+					h4.price
+						span $
+						| 6
+					div.quantity
+						button.minus -
+						span.num 0
+						button.plus +
+				p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+			article.food-item.price-right(id="kebab-pizza")
+				header
+					h3 kebab pizza
+					h4.price
+						span $
+						| 5
+					div.quantity
+						button.minus -
+						span.num 0
+						button.plus +
+				p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+		section
+			h2.color.text-center vegi pizzas
+			article.food-item.price-right(id="rucola-pizza")
+				header
+					h3 rucola pizza
+					h4.price
+						span $
+						| 6
+					div.quantity
+						button.minus -
+						span.num 0
+						button.plus +
+				p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+			article.food-item.price-right(id="cheezy-pizza")
+				header
+					h3 cheezy pizza
+					h4.price
+						span $
+						| 5
+					div.quantity
+						button.minus -
+						span.num 0
+						button.plus +
+				p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+			article.food-item.price-right(id="tomatto-pizza")
+				header
+					h3 tomatto pizza
+					h4.price
+						span $
+						| 4
+					div.quantity
+						button.minus -
+						span.num 0
+						button.plus +
+				p onion, carrot, celery, olive oil, tomato purée, sugar, bay leaves, vegetable stock
+		.order-footer
+			h6.price.text-center.color total: $
+				span 0
+			textarea.order-notes.hidden(placeholder="Add Notes")
+			.row
+				.col-md-6
+					button.btn.btn-md(data-menu-order="notes") add order notes
+				.col-md-6
+					button.btn.btn-md(data-menu-order="review") review your order
+
+		div.order-review.hidden
+			h2.color.text-center your order
+			ul.order-summary
+
+			h6.price.text-center.color total: $
+				span 0
+
+			h2.color.text-center your delivery info
+			form(role="form" data-menu-order="customer" data-success="You order was successfully sent!")
+				.form-group
+					input(type="text" placeholder="name" id="order-name" name="name")
+				.form-group
+					input(type="email" placeholder="email" id="order-email" name="email")
+				.form-group
+					input(type="tel" placeholder="phone" id="order-phone" name="phone")
+				.form-group
+					input(type="text" placeholder="delivery address" id="order-address" name="address")
+				.form-group
+					textarea.order-notes.hidden(placeholder="Add Notes" name="note")
+				
+				.row
+					.col-md-6
+						button.btn.btn-md(data-menu-order="back") go back
+					.col-md-6
+						button.btn.btn-md(data-menu-order="place" type="submit") place order

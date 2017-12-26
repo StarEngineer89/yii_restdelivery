@@ -1,0 +1,120 @@
+.icon-AdminYbcThemeConfig {
+}
+
+.icon-AdminYbcThemeConfig::before {
+  content: "\f009";
+  font-family: FontAwesome;
+}
+.ybc_custom_color{
+    display: none;
+}
+.ybc-form-group{
+    display: none;
+}
+.ybc-form-group.active{
+    display: block;
+}
+.color-off{
+    display: none!important;
+}
+.ybc-tc-loading {
+    display: none;
+    width: 20px;
+    float: right;
+    position: absolute;
+    right: 80px;
+    margin-top: -38px;
+}
+.ybc-tc-import-loading{
+    display: none;
+    width: 20px;
+}
+.ybc-tc-import-loading.active {
+  display: inline-block;
+}
+.ybc-update-success-msg {
+    width: 190px;
+    float: right;
+    position: absolute;
+    right: 80px;
+    margin-top: -38px;
+    background-color: #65df65;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 2px;
+}
+.ybc-tc-loading.active{
+    display: block;
+}
+.ybc-tc-loading img{
+    width: 18px;
+}
+button#module_form_submit_btn:focus,
+button#module_form_submit_btn:active,
+button#module_form_submit_btn:focus i,
+button#module_form_submit_btn:active i,
+#module_form .btn.btn-default:focus,
+#module_form .btn.btn-default:active,
+#module_form .btn.btn-default:focus i,
+#module_form .btn.btn-default:active i {
+    outline: none;
+    -webkit-outline: none;
+    background-color: #fff;
+    color: #333;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.panel-footer button#module_form_submit_btn:hover,
+.panel-footer button#module_form_submit_btn:hover i,
+#module_form .btn.btn-default:hover,
+#module_form .btn.btn-default:hover i{
+    background-color: #00aff0;
+    color: #fff;
+}
+.ybc-tc-separator {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+.ybc-form-left {
+    width: 20%;
+    /* float: left; */
+    border: 1px solid #dbdbdb;
+    margin-right: 3%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 4px;
+}
+.ybc-form-right {
+    /* float: left; */
+    width: 75%;
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 15px;
+}
+ul.ybc_tab {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+.ybc_tab li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dbdbdb;
+    cursor: pointer;
+}
+.ybc_tab li:last-child {
+    border-bottom: none;
+}
+.ybc_tab li:hover,.ybc_tab li.active  {
+    background-color: #eee;
+}
+.ybc-import-error-msg {
+  color: red;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.ybc-tc-import-loading img {
+  max-width: 100%;
+}

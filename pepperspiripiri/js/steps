@@ -1,0 +1,17 @@
+Step1. Add below CSS code before end of '<head>' tag in order to fix the scrolling issue 
+<style type="text/css">
+body{ overflow: initial !important; }
+</style>
+
+Step2. Open the script.js and search for the 'contents().find('.back-mobile')'
+
+Step3. Change the the iframe url according to specific child website ie./menu-pizza4u?iframe
+
+Step4. Save and upload the file under the 'js' directory of the child website
+
+Step5. Search for the following code in menu.html 'iframeResizer/iframeResizer.min.js'
+
+Step6. Copy and paste the below code in order to link the script.js
+<script type='text/javascript' src='js/script.js'></script>
+
+Note: For proceed button you need to adjust the value as it may vary to site
