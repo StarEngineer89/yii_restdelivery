@@ -186,7 +186,13 @@ function hide_expand(id){
     if(text == "Click To Expand"){
         $("#"+id).text("Click To Hide");
     }
-    else{
+    if ( text == "Tap To Expand" ) {
+        $("#" + id).text("Tap To Hide");
+    }
+    if ( text == "Tap To Hide" ) {
+        $("#" + id).text( "Tap To Expand" );
+    }
+    if ( text == "Click To Hide" ) {
         $("#"+id).text("Click To Expand");
     }
 }
@@ -521,7 +527,7 @@ function form_submit(formid)
                     load_cc_list();
                 }
 
-                if ( action=="addCreditCardMerchant"){m
+                if ( action=="addCreditCardMerchant"){
                     load_cc_list_merchant();
                 }
 
@@ -1269,10 +1275,139 @@ jQuery(document).ready(function() {
                 break;
         }
 
+        /*
+        * Added by CStar
+        * */
+        if ( $("input[name='delivery_type']:checked").val()=="delivery"){
+            if ( $("#minimum_order").length>=1){
+                var minimum= parseFloat($("#minimum_order").val());
+                if (isNaN(subtotal)){
+                    subtotal=0;
+                }
+                if (isNaN(minimum)){
+                    minimum=0;
+                }
+                if ( minimum>subtotal){
+                    uk_msg(js_lang.trans_5+" "+ $("#minimum_order_pretty").val());
+                    return;
+                }
 
+                if ( $("#merchant_maximum_order").exists() ){
+                    console.debug("max");
+                    var merchant_maximum_order= parseFloat($("#merchant_maximum_order").val());
+                    if ( subtotal>merchant_maximum_order){
+                        uk_msg(js_lang.trans_31+" "+ $("#merchant_maximum_order_pretty").val());
+                        return;
+                    }
+                }
+            }
+        }
+
+        if ( $("input[name='delivery_type']:checked").val()=="pickup"){
+
+            if ( $("#merchant_minimum_order_pickup").exists()){
+                var minimum= parseFloat($("#merchant_minimum_order_pickup").val());
+                if (isNaN(subtotal)){
+                    subtotal=0;
+                }
+                if (isNaN(minimum)){
+                    minimum=0;
+                }
+                if ( minimum>subtotal){
+                    uk_msg(js_lang.trans_5+" "+ $("#merchant_minimum_order_pickup_pretty").val());
+                    return;
+                }
+            }
+
+            if ( $("#merchant_maximum_order_pickup").exists() ){
+                var merchant_maximum_order= parseFloat($("#merchant_maximum_order_pickup").val());
+                if ( subtotal>merchant_maximum_order){
+                    uk_msg(js_lang.trans_31+" "+ $("#merchant_maximum_order_pickup_pretty").val());
+                    return;
+                }
+            }
+        }
+
+        //if ( $("#delivery_type").val()=="delivery" ){
+        switch ($("input[name='delivery_type']:checked").val())
+        {
+            case "delivery":
+
+                if ( $("#is_ok_delivered").val()==2){
+                    uk_msg(js_lang.trans_15+" "+$("#merchant_delivery_miles").val() + " "+$("#unit_distance").val());
+                    return;
+                }
+                if ( $("#delivery_date").val()==""){
+                    uk_msg(js_lang.trans_43);
+                    $("#delivery_date").focus();
+                    return;
+                }
+
+                if ( $("#merchant_required_delivery_time").exists()){
+                    if ( $("#merchant_required_delivery_time").val()=="yes"){
+                        /*if ( $("#delivery_time").val()==""){
+                            var delivery_asap=$("#delivery_asap:checked").val();
+                            dump(delivery_asap);
+                            if ( delivery_asap!=1){
+                                uk_msg(js_lang.trans_44);
+                                $("#delivery_time").focus();
+                                return;
+                            }
+                        }*/
+                    }
+                }
+                break;
+
+            case "dinein":
+
+                var dinein_suborder= parseFloat($("#subtotal_order").val());
+                dinein_minimum = parseFloat(dinein_minimum);
+                dinein_max = parseFloat(dinein_max);
+
+                if(dinein_minimum>0){
+                    if ( dinein_minimum>dinein_suborder ){
+                        uk_msg(js_lang.trans_5 + " "+ $("#minimum_order_dinein").val() );
+                        return;
+                    }
+                }
+                if(dinein_max>0){
+                    if ( dinein_max<dinein_suborder ){
+                        uk_msg(js_lang.trans_31 + " "+ $("#maximum_order_dinein").val() );
+                        return;
+                    }
+                }
+
+                if ( $("#delivery_date").val()==""){
+                    uk_msg(js_lang.trans_42);
+                    $("#delivery_date").focus();
+                    return;
+                }
+                if ( $("#delivery_time").val()==""){
+                    uk_msg(js_lang.dinein_time_is_required);
+                    $("#delivery_time").focus();
+                    return;
+                }
+                break;
+
+            case "pickup":
+                if ( $("#delivery_date").val()==""){
+                    uk_msg(js_lang.trans_42);
+                    $("#delivery_date").focus();
+                    return;
+                }
+                //if ( $("#delivery_time").val()==""){
+                // 	uk_msg(js_lang.trans_41);
+                // 	$("#delivery_time").focus();
+                // 	return;
+                //}
+                break;
+        }
+        /*
+        * End Added by CStar
+        * */
 
         // var params="delivery_type="+$("#delivery_type").val()+"&delivery_date="+$("#delivery_date").val();
-        var params="delivery_type="+$("input[name='delivery_type']:checked").val()+"&delivery_date="+$("input[name='delivery_type']").val();
+        var params="delivery_type="+$("input[name='delivery_type']:checked").val()+"&delivery_date="+$("#delivery_date").val();
         params+="&delivery_time="+$("#delivery_time").val();
         params+="&delivery_asap="+$("#delivery_asap:checked").val();
         params+="&merchant_id="+$("#merchant_id").val();
@@ -2069,8 +2204,9 @@ function uk_msg_sucess(msg)
 
 function load_item_cart()
 {
+    var delivery_type = $('input[name="delivery_type"]:checked').val();
     var params="action=loadItemCart&currentController=store&merchant_id="+$("#merchant_id").val();
-    params+="&delivery_type="+$("#delivery_type").val();
+    params+="&delivery_type="+delivery_type;
 
     if ( $("#cart_tip_percentage").exists()  ){
         params+="&cart_tip_percentage=" + $("#cart_tip_percentage").val();
@@ -2112,12 +2248,13 @@ function load_item_cart()
                 });
                 var text_button = data.details.raw.total.curr+data.details.raw.total.subtotal.toFixed(2)+' ('+num_item+')';
 
-
+                var url_param = window.location.search;
                 if(is_iframe){
                     var button_cart = '<div style="position: fixed;bottom:0px;left:0px;width: 100%;height: 57px;padding: 5px;z-index: 999;background: #fff;border-top: 1px solid #ccc;" class="footer_button_cart"><a href="/cart/?iframe=true" class="proceedmobile btn-lg btn btn-success btn-block" style="border-radius: 2px;height:45px;"><span class="pull-left"><strong>Proceed</strong></span><span class="pull-right" style="margin-right: 60px;">'+text_button+'</span></a></div>';
                 }
                 else {
-                    var button_cart = '<div style="position: fixed;bottom:0px;left:0px;width: 100%;height: 57px;padding: 5px;z-index: 999;background: #fff;border-top: 1px solid #ccc;" class="footer_button_cart"><a href="/cart" class="proceedmobile btn-lg btn btn-success btn-block" style="border-radius: 2px;height:45px;"><span class="pull-left"><strong>Proceed</strong></span><span class="pull-right" style="margin-right: 60px;">'+text_button+'</span></a></div>';
+                    var button_cart = '<div style="position: fixed;bottom:0px;left:0px;width: 100%;height: 57px;padding: 5px;z-index: 999;background: #fff;border-top: 1px solid #ccc;" class="footer_button_cart"><a href="/cart'+url_param+'" class="proceedmobile btn-lg btn btn-success btn-block"' +
+                        ' style="border-radius: 2px;height:45px;"><span class="pull-left"><strong>Proceed</strong></span><span class="pull-right" style="margin-right: 60px;">'+text_button+'</span></a></div>';
                 }
 
 
@@ -2600,6 +2737,17 @@ function fb_register(object)
             if (data.code==1){
                 load_top_menu();
 
+        		if(!empty(data.details)){
+	        		if (!empty(data.details.redirectverify)){
+	        			uk_msg_sucess(data.msg);
+	        			if ($("#redirect").exists()){
+	        			   window.location.href = data.details.redirectverify+"&checkout=true"; 
+	        			} else {
+	        			   window.location.href = data.details.redirectverify; 
+	        			}
+	        			return;
+	        		}
+        		}
                 if ( $(".section-checkout").exists() ){
                     window.location.href = $("#redirect").val();
                 }
@@ -2740,6 +2888,118 @@ function apply_voucher()
     });
 }
 
+function remove_voucher()
+{
+    var action="removeVoucher";
+
+    if ( action=="removeVoucher"){
+        if ( $(".apply_voucher").text()==js_lang.trans_23 ){
+            confirmDialog("Selecting To Pay By Cash Will Remove Voucher Code From Your Cart", {
+                    /*
+                    Define your buttons here, can handle multiple buttons
+                    with custom title and values
+                    */
+                    buttons: [
+                        { class: "yes green-button inline block", type: "button", title: "Confirm", value: "yes" },
+                        { class: "no inline block", type: "button", title: "Cancel", value: "no" },
+                    ],
+                    modal: true
+                },
+                function(resp) {
+                    var code = $("#voucher_code").val();
+                    var total = parseFloat($('.cart_subtotal').text().replace('$', '').replace('£', '').replace('&#163;', ''));
+                    /* Updated by Pei */
+                    var params="action="+action+"&currentController=store&voucher_code="+code+"&merchant_id="+$("#merchant_id").val() + "&subtotal=" + total;
+                    busy(true);
+                    $.ajax({
+                        type: "POST",
+                        url: ajax_url,
+                        data: params,
+                        dataType: 'json',
+                        success: function(data){
+                            busy(false);
+                            if (data.code==1){
+                                //console.debug(action);
+                                load_item_cart();
+                                if ( action=="removeVoucher"){
+                                    $(".apply_voucher").text(js_lang.trans_24);
+                                    $("#voucher_code").show();
+                                } else {
+                                    $("#voucher_code").hide();
+                                    $(".apply_voucher").text(js_lang.trans_23);
+                                }
+
+                                /*if ( $(".tip_percentage").html()!="0%" ){
+                                    setTimeout( function(){
+
+                                        if($(".tips.active").data("type")=="tip"){
+
+                                            var tip=$(".tips.active").data("tip");
+                                            var tip_percentage = tip*100;
+
+                                            var cart_subtotal=$("#subtotal_order2").val()
+                                            var tip_raw = tip*cart_subtotal;
+                                            dump(tip_raw.toFixed(2));
+
+                                            display_tip(tip_percentage,tip_raw.toFixed(2));
+
+                                        } else {
+                                        }
+
+                                    } , 1000);
+                                }*/
+
+                            } else {
+                                uk_msg(data.msg);
+                            }
+                        },
+                        error: function(){
+                            busy(false);
+                        }
+                    });
+
+                    $('.voucher_wrap').hide();
+                }
+            );
+        } else {
+            $('.voucher_wrap').hide();
+        }
+    }
+}
+
+function confirmDialog(msg, options, callback) {
+    $.fancybox("#confirm",{
+        modal: options.modal,
+        beforeShow: function() {
+            this.content.prepend("<p class=\"title\"></p>");
+            $(".title").html(msg);
+
+            for (i = 0; i < options.buttons.length; i++) {
+                this.content.append($("<input>", {
+                    type: "button", class: "confirm " + options.buttons[i].class,
+                    value: options.buttons[i].title
+                }).data("index", i));
+            }
+        },
+        afterShow: function() {
+            $(".confirm.yes").on("click", function(event){
+                ret = options.buttons[$(event.target).data("index")].value;
+                callback.call(this, ret);
+                $.fancybox.close();
+            });
+            $(".confirm.no").on('click', function (event) {
+                $('.Pay_By_Cash').iCheck('uncheck');
+                $('.Pay_By_Card').iCheck('check');
+                $.fancybox.close();
+            })
+        },
+        afterClose: function() {
+            this.content.html("");
+
+        }
+    });
+}
+
 /***************************************
  GET CURRENT LOCATION
  ***************************************/
@@ -2845,10 +3105,10 @@ jQuery(document).ready(function() {
             if ( $("#customer_ask_address").val()!=2){
 
                 var delivery_type=$("#delivery_type").val();
-                if(delivery_type=="delivery"){
+                // if(delivery_type=="delivery"){
                     var params="action=enterAddress&currentController=store&tbl=enterAddress";
                     open_fancy_box2(params);
-                }
+                // }
             }
         }
     }
@@ -2896,7 +3156,7 @@ jQuery(document).ready(function() {
         return;
     });
 
-    $( document ).on( "change", "#delivery_type", function() {
+    $( document ).on( "change", 'input[name="delivery_type"]', function() {
         var delivery_type=$(this).val();
         if ( delivery_type=="pickup"){
             $(".delivery-asap").hide();

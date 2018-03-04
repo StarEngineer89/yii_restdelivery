@@ -10,19 +10,17 @@
 
 @media screen and (max-width: 736px) and (min-width: 300px){
 .search-wraps.single-search, .parallax-search .search-wraps {
-    padding-top: 80px;
+    padding-top: 240px;
     color: #D73F89;
-  
-    
+    height: 700px;
 }
 }
 
 @media screen and (max-width: 736px) and (min-width: 360px){
 .search-wraps.single-search, .parallax-search .search-wraps {
-    padding-top: 80px;
+    padding-top: 240px;
     color: #D73F89;
-      height: 400px;
-    
+    height: 700px;
 }
 }
 @media screen and (max-width: 1024px) and (min-width: 300px)   {
@@ -32,7 +30,27 @@ display:none;
 
 }
 
-.howitwork{
+<?php if ( getOptionA('disabled_featured_merchant') == "yes" || getOptionA('disabled_featured_merchant_mobile') == "yes"):?>
+    .section-feature-resto {
+        display:none;
+    }
+<?php endif; ?>
+
+
+<?php if ( getOptionA('theme_hide_footer_section1') == 2 || getOptionA('theme_hide_footer_section1_mobile') == 2):?>
+    .section-footer .footer-menu {
+        display:none;
+    }
+<?php endif; ?>
+
+
+<?php if ( getOptionA('theme_hide_footer_section2') == 2 || getOptionA('theme_hide_footer_section2_mobile') == 2):?>
+    .section-footer .footer-others {
+        display:none;
+    }
+<?php endif; ?>
+
+    .howitwork{
     
  display:none;   
 }
@@ -245,11 +263,9 @@ margin-top: 50px;
    
    @media screen and (max-width: 736px) and (min-width: 300px){
   .search-wraps.single-search, .parallax-search .search-wraps {
-    padding-top: 140px;
+    padding-top: 240px;
     color: #D73F89;
     margin-bottom:20px;
-    
-   
     }
     .Btndsk{
     
@@ -333,9 +349,19 @@ if (empty($home_search_text)){
 	$home_search_text=Yii::t("default","Find restaurants near you");
 }
 
+$home_search_text_mobile=Yii::app()->functions->getOptionAdmin('home_search_text_mobile');
+if (empty($home_search_text_mobile)){
+    $home_search_text_mobile=Yii::t("default","ORDER FOOD");
+}
+
 $home_search_subtext=Yii::app()->functions->getOptionAdmin('home_search_subtext');
 if (empty($home_search_subtext)){
 	$home_search_subtext=Yii::t("default","Order Food Delivery Online From Local Restaurants");
+}
+
+$home_search_subtext_mobile=Yii::app()->functions->getOptionAdmin('home_search_subtext_mobile');
+if (empty($home_search_subtext_mobile)){
+    $home_search_subtext_mobile=Yii::t("default","FROM YOUR LOCAL TAKEAWAYS");
 }
 
 $home_search_mode=Yii::app()->functions->getOptionAdmin('home_search_mode');
@@ -348,7 +374,8 @@ $placholder_search=Yii::t("default",$placholder_search);
 
 <?php if ( $home_search_mode=="address" || $home_search_mode=="") :?>
 
-<img style=" position:fixed;z-index:-1; opacity: 0.4; filter: alpha(opacity=50);" class=" homage" src="<?php echo assetsURL()."/images/banner.jpg"?>">
+<!--<img style=" position:fixed;z-index:-1; opacity: 0.4; filter: alpha(opacity=50);" class=" homage" src="--><?php //echo assetsURL()."/images/banner.jpg"?><!--">-->
+<img style=" position:fixed;z-index:-1; /*opacity: 0.4; filter: alpha(opacity=50);*/" class=" homage" src="<?php echo assetsURL()."/images/food-salad-restaurant-person-updated.jpg"?>">
 
 
 <!--<div id="parallax-wrap" class="parallax-container parallax-home " 
@@ -377,9 +404,11 @@ data-image-src="<?php echo assetsURL()."/images/banner.jpg"?>">
 if ( $enabled_advance_search=="yes"){
 	$this->renderPartial('/front/advance_search',array(
 	  'home_search_text'=>$home_search_text,
+	  'home_search_text_mobile'=>$home_search_text_mobile,
 	  'kr_search_adrress'=>$kr_search_adrress,
 	  'placholder_search'=>$placholder_search,
 	  'home_search_subtext'=>$home_search_subtext,
+	  'home_search_subtext_mobile'=>$home_search_subtext_mobile,
 	  'theme_search_merchant_name'=>getOptionA('theme_search_merchant_name'),
 	  'theme_search_street_name'=>getOptionA('theme_search_street_name'),
 	  'theme_search_cuisine'=>getOptionA('theme_search_cuisine'),
@@ -388,9 +417,11 @@ if ( $enabled_advance_search=="yes"){
 	));
 } else $this->renderPartial('/front/single_search',array(
       'home_search_text'=>$home_search_text,
+      'home_search_text_mobile'=>$home_search_text_mobile,
 	  'kr_search_adrress'=>$kr_search_adrress,
 	  'placholder_search'=>$placholder_search,
-	  'home_search_subtext'=>$home_search_subtext
+	  'home_search_subtext'=>$home_search_subtext,
+	  'home_search_subtext_mobile'=>$home_search_subtext_mobile
 ));
 ?>
 </div> <!--parallax-container-->

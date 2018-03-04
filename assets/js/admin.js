@@ -736,6 +736,7 @@ function table()
 	       "bServerSide": server_side,
 	       "sAjaxSource": ajax_url+"?"+params,	       
 	       "aaSorting": [[ 0, sort_by ]],
+			"iSortCol_0" : [0],
 	       "oLanguage":{	       	 
 	       	 "sProcessing": "<p>Processing.. <i class=\"fa fa-spinner fa-spin\"></i></p>"
 	       },
@@ -2788,3 +2789,20 @@ function loadTableRates()
 {
 	callAjax('LoadTableRates');
 }
+
+/* Added by CStar */
+$( document ).on( "click", ".mark-all-checked-receipts", function() {
+    var params="action=markAsViewReceipts&tbl=viewReceipt&ids="+ $(this).data("ids")+"&backend=true"+"&currentController="+$("#currentController").val();
+    $.ajax({
+        type: "POST",
+        url: ajax_url,
+        data: params,
+        dataType: 'json',
+        success: function(data){
+            location.reload();
+        },
+        error: function(){
+
+        }
+    });
+});

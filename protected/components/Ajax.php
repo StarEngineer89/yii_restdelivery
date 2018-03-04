@@ -3507,13 +3507,19 @@ Yii::t("default","Details").
             $this->code=1;
             $this->msg=count($res);
             $order_list='';
+            $order_ids = array();
             foreach ($res as $val) {
                 $order_list.="<div class=\"new-order-link\">";
                 $order_list.="<a class=\"view-receipt\" data-id=\"$val[order_id]\" 
     			href=\"javascript:;\">".t("Click here to view")." ". t("Reference #") .":". $val['order_id'] . "</a>";
                 $order_list.="<div>";
+                $order_ids[] = $val['order_id'];
             }
-            $this->details=$order_list;
+            $ordersIds = implode(",", $order_ids);
+
+            $markAllAsChecked =  "<a class=\"mark-all-checked-receipts\" data-ids=\"$ordersIds\" href=\"javascript:;\">".t("Mark All as Checked") . "</a>";
+            $this->details = $markAllAsChecked;
+            $this->details .= $order_list;
         } else $this->msg= t("No results");
     }
 
@@ -4121,7 +4127,8 @@ Yii::t("default","Details").
                     "<span class=\"tag ".$val['status']."\">".t($val['status'])."</span>"."<div>$action</div>",
                     t($val['request_from']),
                     $date_created,
-                    "<span>". $val['special_instructions']. "</span>"
+                    "<span>". $val['special_instructions']. "</span>",
+                    "<a>". $val['est_time'] . " Minutes</a>"
                 );
 
             }

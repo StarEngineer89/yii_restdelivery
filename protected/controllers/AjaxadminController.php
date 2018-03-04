@@ -172,6 +172,7 @@ class AjaxadminController extends CController
 		  'receipt_template_sms',
 		  'receipt_send_to_merchant_email',
 		  'receipt_send_to_merchant_sms',
+		  'receipt_send_to_merchant_push',
 		  'receipt_send_to_admin_email',
 		  'receipt_send_to_admin_sms',
 		  'offline_bank_deposit_email',
@@ -191,6 +192,7 @@ class AjaxadminController extends CController
 		  'booked_notify_merchant_sms',
 		  'booking_update_status_email',
 		  'booking_update_status_sms',
+		  'booking_update_status_push',
 		  'merchant_welcome_signup_email',
 		  'merchant_welcome_signup_sms',
 		  'order_idle_to_merchant_email',
@@ -198,7 +200,8 @@ class AjaxadminController extends CController
 		  'order_idle_to_admin_email',
 		  'order_idle_to_admin_sms',
 		  'merchant_invoice_email',
-		  'merchant_invoice_sms'
+		  'merchant_invoice_sms',
+		  'booked_notify_merchant_push',
 		);
 		
 		$predefined=array_merge($predefined,(array)$order_stats);		

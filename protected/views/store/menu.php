@@ -564,17 +564,29 @@ if ($food_viewing_private==2){
                                 <div class="clearfix" style="margin-top: 30px;"></div>
 
                                 <?php /*echo CHtml::dropDownList('delivery_type',$now,
-           (array)Yii::app()->functions->DeliveryOptions($merchant_id),array(
-             'class'=>'grey-fields'
-           ))*/?>
+                                    (array)Yii::app()->functions->DeliveryOptions($merchant_id),array(
+                                        'class'=>'grey-fields'
+                                    ))*/?>
+
+                                <?php $merchantServices = Yii::app()->functions->Services()[FunctionsV3::getMerchantServices($merchant_id)] ?>
+                                <?php $merchantServices = explode(' ', $merchantServices) ?>
 
                                 <?php $deliveryOptions = Yii::app()->functions->DeliveryOptions($merchant_id) ?>
                                 <?php if (is_array($deliveryOptions)): ?>
+
+                                    <?php if (empty($service_option) || is_null($service_option)): ?>
+                                        <?php $defaltChecked = false; ?>
+                                    <?php endif; ?>
 
                                     <?php foreach ($deliveryOptions as $val => $label): ?>
                                         <?php $available = 0 ?>
                                         <?php $options = array() ?>
                                         <?php $checked = false; ?>
+                                        <?php $show = false; ?>
+
+                                        <?php if (in_array($label, $merchantServices)): ?>
+                                            <?php $show = true ?>
+                                        <?php endif; ?>
 
                                         <?php if ($val == 'delivery'): ?>
                                             <?php $isOpen = Yii::app()->functions->isMerchantOpenDelivery($merchant_id); ?>
@@ -582,6 +594,12 @@ if ($food_viewing_private==2){
                                             <?php if ($isOpen): ?>
                                                 <?php $available = true ?>
                                             <?php endif; ?>
+
+                                            <?php if (!$isOpen && FunctionsV3::getMerchantDeliveryTime($merchant_id)): ?>
+                                                <?php $deliveryHours = FunctionsV3::getMerchantDeliveryTime($merchant_id) ?>
+                                                <?php $label = "Delivery (Start From " . $deliveryHours[0] . ")" ?>
+                                            <?php endif; ?>
+
                                         <?php endif; ?>
 
                                         <?php if ($val == 'pickup'): ?>
@@ -590,28 +608,46 @@ if ($food_viewing_private==2){
                                             <?php if ($isOpen): ?>
                                                 <?php $available = true ?>
                                             <?php endif; ?>
+
+                                            <?php if (!$isOpen && FunctionsV3::getMerchantPickupTime($merchant_id)): ?>
+                                                <?php $pickupHours = FunctionsV3::getMerchantPickupTime($merchant_id) ?>
+                                                <?php $label = "Pickup (Start From ( " . $pickupHours[0]. ")" ?>
+                                            <?php endif; ?>
+                                        <?php endif; ?>
+
+                                        <?php if (Yii::app()->functions->getOption("merchant_preorder",$merchant_id)): ?>
+                                            <?php $available = true ?>
                                         <?php endif; ?>
 
                                         <?php if ($service_option == $val && $available): ?>
                                             <?php $checked = "checked" ?>
                                         <?php endif; ?>
 
+                                        <?php if ((is_null($service_option) || empty($service_option)) && $available): ?>
+                                            <?php if ($defaltChecked == false): ?>
+                                                <?php $checked = "checked" ?>
+                                                <?php $defaltChecked = true ?>
+                                            <?php endif; ?>
+                                        <?php endif; ?>
+
                                         <?php $options = array('value'=>$val, 'id'=>'delivery_type_' . $val) ?>
                                         <?php if ($available): ?>
                                             <?php $options['checked'] = "checked"; ?>
-                                            <?php $options['class'] = "delivery-option-radio"; ?>
+                                            <?php $options['class'] = "delivery-option-radio with-font"; ?>
                                             <?php $labelClass = "delivery-type" ?>
                                         <?php else: ?>
                                             <?php $options['checked'] = ""; ?>
                                             <?php $options['disabled'] = "disabled"; ?>
-                                            <?php $options['class'] = "delivery-option-radio"; ?>
+                                            <?php $options['class'] = "delivery-option-radio with-font"; ?>
                                             <?php $labelClass = "delivery-type grey" ?>
                                         <?php endif; ?>
 
-                                        <div class="delivery-option-item">
-                                            <?php echo CHtml::radioButton('delivery_type', $checked, $options) ?>
-                                            <?php echo CHtml::label(CHtml::encode($label), 'delivery_type_' . $val, array('class' => $labelClass) ); ?>
-                                        </div>
+                                        <?php if ($show): ?>
+                                            <div class="delivery-option-item">
+                                                <?php echo CHtml::radioButton('delivery_type', $checked, $options) ?>
+                                                <?php echo CHtml::label(CHtml::encode($label), 'delivery_type_' . $val, array('class' => $labelClass) ); ?>
+                                            </div>
+                                        <?php endif; ?>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
 
@@ -635,8 +671,9 @@ if ($food_viewing_private==2){
                                     <?php endif;?>
 
                                     <?php if ( $checkout['is_pre_order']==2):?>
-                                        <span class="delivery-asap">
-	                                        <?php echo CHtml::checkBox('delivery_asap',true,array('class'=>"icheck"))?>
+                                        <span class="delivery-asap with-font">
+	                                        <?php echo CHtml::checkBox('delivery_asap',true,array('class'=>"icheck 
+	                                        with-font"))?>
                                             <span class="text-muted"><?php echo Yii::t("default","Delivery ASAP?")?></span>
 	                                    </span>
                                     <?php endif;?>

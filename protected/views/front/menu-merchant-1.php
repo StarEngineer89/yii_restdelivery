@@ -137,7 +137,7 @@ dump($merchant_tax);*/
           </span>
         
         
-         <span style="text-align:center;" class="expand"><p id="<?php echo $val['category_id']?>" onclick="hide_expand(<?php echo $val['category_id']?>);" style="text-align:center;margin-top:-20px">Click To Expand </p>  </span>
+         <span style="text-align:center;" class="expand"><p id="<?php echo $val['category_id']?>" onclick="hide_expand(<?php echo $val['category_id']?>);" style="text-align:center;margin-top:-20px">Tap To Expand </p>  </span>
          
          
           <span class="bold pull-right rightdiv">

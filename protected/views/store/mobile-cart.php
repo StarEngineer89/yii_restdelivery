@@ -121,26 +121,42 @@ if($data['service']==3 || $data['service']==6 || $data['service']==7 ){
 
         <!--DELIVERY OPTIONS-->
         <div class="inner line-top relative delivery-option center" style="padding-top:15px;">
-            <i class="order-icon delivery-option-icon"></i>
+            <div class="delivery-option-title">
+                <!--<i class="order-icon delivery-option-icon"></i>-->
 
-            <?php if ($remove_delivery_info==false):?>
-                <p class="bold"><?php echo t("Delivery Options")?></p>
-            <?php else :?>
-                <p class="bold"><?php echo t("Options")?></p>
-            <?php endif;?>
+                <?php if ($remove_delivery_info==false):?>
+                    <p class="bold"><?php echo t("I Want To Order For")?></p>
+                <?php else :?>
+                    <p class="bold"><?php echo t("Options")?></p>
+                <?php endif;?>
+            </div>
+
+            <div class="clearfix" style="margin-top: 30px;"></div>
 
             <?php /*echo CHtml::dropDownList('delivery_type',$now,
            (array)Yii::app()->functions->DeliveryOptions($merchant_id),array(
              'class'=>'grey-fields'
            ))*/?>
 
+            <?php $merchantServices = Yii::app()->functions->Services()[FunctionsV3::getMerchantServices($merchant_id)] ?>
+            <?php $merchantServices = explode(' ', $merchantServices) ?>
+
             <?php $deliveryOptions = Yii::app()->functions->DeliveryOptions($merchant_id) ?>
             <?php if (is_array($deliveryOptions)): ?>
+
+                <?php if (empty($service_option) || is_null($service_option)): ?>
+                    <?php $defaltChecked = false; ?>
+                <?php endif; ?>
 
                 <?php foreach ($deliveryOptions as $val => $label): ?>
                     <?php $available = 0 ?>
                     <?php $options = array() ?>
                     <?php $checked = false; ?>
+                    <?php $show = false; ?>
+
+                    <?php if (in_array($label, $merchantServices)): ?>
+                        <?php $show = true ?>
+                    <?php endif; ?>
 
                     <?php if ($val == 'delivery'): ?>
                         <?php $isOpen = Yii::app()->functions->isMerchantOpenDelivery($merchant_id); ?>
@@ -148,6 +164,12 @@ if($data['service']==3 || $data['service']==6 || $data['service']==7 ){
                         <?php if ($isOpen): ?>
                             <?php $available = true ?>
                         <?php endif; ?>
+
+                        <?php if (!$isOpen && FunctionsV3::getMerchantDeliveryTime($merchant_id)): ?>
+                            <?php $deliveryHours = FunctionsV3::getMerchantDeliveryTime($merchant_id) ?>
+                            <?php $label = "Delivery (Start From " . $deliveryHours[0] . ")" ?>
+                        <?php endif; ?>
+
                     <?php endif; ?>
 
                     <?php if ($val == 'pickup'): ?>
@@ -156,10 +178,26 @@ if($data['service']==3 || $data['service']==6 || $data['service']==7 ){
                         <?php if ($isOpen): ?>
                             <?php $available = true ?>
                         <?php endif; ?>
+
+                        <?php if (!$isOpen && FunctionsV3::getMerchantPickupTime($merchant_id)): ?>
+                            <?php $pickupHours = FunctionsV3::getMerchantPickupTime($merchant_id) ?>
+                            <?php $label = "Pickup (Start From " . $pickupHours[0] . ")" ?>
+                        <?php endif; ?>
+                    <?php endif; ?>
+
+                    <?php if (Yii::app()->functions->getOption("merchant_preorder",$merchant_id)): ?>
+                        <?php $available = true ?>
                     <?php endif; ?>
 
                     <?php if ($service_option == $val && $available): ?>
                         <?php $checked = "checked" ?>
+                    <?php endif; ?>
+
+                    <?php if ((is_null($service_option) || empty($service_option)) && $available): ?>
+                        <?php if ($defaltChecked == false): ?>
+                            <?php $checked = "checked" ?>
+                            <?php $defaltChecked = true ?>
+                        <?php endif; ?>
                     <?php endif; ?>
 
                     <?php $options = array('value'=>$val, 'id'=>'delivery_type_' . $val) ?>
@@ -174,10 +212,19 @@ if($data['service']==3 || $data['service']==6 || $data['service']==7 ){
                         <?php $labelClass = "delivery-type grey" ?>
                     <?php endif; ?>
 
-                    <div class="delivery-option-item">
-                        <?php echo CHtml::radioButton('delivery_type', $checked, $options) ?>
-                        <?php echo CHtml::label(CHtml::encode($label), 'delivery_type_' . $val, array('class' => $labelClass) ); ?>
-                    </div>
+                    <?php if ($show): ?>
+                        <div class="delivery-option-item">
+                            <?php echo CHtml::radioButton('delivery_type', $checked, $options) ?>
+                            <?php echo CHtml::label(CHtml::encode($label), 'delivery_type_' . $val, array('class' => $labelClass) ); ?>
+
+                            <?php if ($val == "delivery"): ?>
+                                <i class="delivery-btn"></i>
+                            <?php endif; ?>
+                            <?php if ($val == "pickup"): ?>
+                                <i class="collection-btn"></i>
+                            <?php endif; ?>
+                        </div>
+                    <?php endif; ?>
                 <?php endforeach; ?>
             <?php endif; ?>
 
@@ -186,20 +233,23 @@ if($data['service']==3 || $data['service']==6 || $data['service']==7 ){
                 FormatDateTime($now,false),array('class'=>"j_date grey-fields",'data-id'=>'delivery_date'))?>
 
             <div class="delivery_asap_wrap">
+                <!-- Disabled - by CStar on 2018-01-16 -->
                 <?php
-                echo CHtml::dropDownList('delivery_time',$now_time,
+/*                echo CHtml::dropDownList('delivery_time',$now_time,
                     (array)FunctionsV3::timeList()
                     ,array(
                         'class'=>"grey-fields"
                     ))
-                ?>
-                <?php if ( $checkout['is_pre_order']==2):?>
+                */?><!--
+                <?php /*if ( $checkout['is_pre_order']==2):*/?>
                     <span class="delivery-asap">
-	           <?php echo CHtml::checkBox('delivery_asap',true,array('class'=>"icheck"))?>
-                        <span class="text-muted"><?php echo Yii::t("default","Delivery ASAP?")?></span>
+	           <?php /*echo CHtml::checkBox('delivery_asap',true,array('class'=>"icheck"))*/?>
+                        <span class="text-muted"><?php /*echo Yii::t("default","Delivery ASAP?")*/?></span>
 	         </span>
-                <?php endif;?>
-
+                --><?php /*endif;*/?>
+                <!-- End Disable -->
+                <input type="hidden" name="delivery_time" class="delivery_time" id="delivery_time" value="<?php $now_time ?>">
+                <input type="hidden" name="delivery_asap" class="delivery_asap" id="delivery_asap" value="true">
             </div><!-- delivery_asap_wrap-->
 
             <?php if ( $checkout['code']==1):?>

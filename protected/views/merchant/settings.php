@@ -55,6 +55,9 @@ $FunctionsK=new FunctionsK();
 $tips_list=$FunctionsK->tipsList(true);
 
 $merchant_info=(array)Yii::app()->functions->getMerchantInfo();
+
+$stores_pickup_times_copy = Yii::app()->functions->getOption("stores_pickup_times_copy", $merchant_id);
+$stores_pickup_times_copy = !empty($stores_pickup_times_copy) ? $stores_pickup_times_copy : false;
 ?>
 
 <div id="error-message-wrapper"></div>
@@ -734,6 +737,17 @@ $merchant_info=(array)Yii::app()->functions->getMerchantInfo();
                 </label>
                 <div class="clear"></div>
                 <p class="uk-text-muted"><?php echo Yii::t("default","If days has not been selected then merchant will be set to pick up.")?></p>
+
+                <?php echo Yii::t("default",'Copy opening times from "Store day(s) open table.')?></label>
+                <?php
+                echo CHtml::checkBox('stores_pickup_times_copy',
+                    $stores_pickup_times_copy == "yes"?true:false
+                    ,array(
+                        'value'=>"yes",
+                        'class'=>"icheck"
+                    ))
+                ?>
+
                 <ul class="uk-list uk-list-striped">
                     <?php foreach ($days as $key=>$val):?>
                         <li>

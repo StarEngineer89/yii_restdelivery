@@ -99,18 +99,18 @@ $this->renderPartial('/front/order-progress-bar', array(
             $label_1 = 'Delivery Date';
             $label_2 = 'Delivery Time';
 
-            $address = $data['street'] . " ";
-            if (isset($data['area_name'])) {
-                $address .= $data['area_name'] . " ";
+            $address = $data['street'];
+            if (isset($data['area_name']) && $data['area_name']) {
+                $address .= ' ' . $data['area_name'];
             }
-            if (isset($data['city'])) {
-                $address .= $data['city'] . " ";
+            if (isset($data['city']) && $data['city']) {
+                $address .= ' ' . $data['city'];
             }
-            if (isset($data['state'])) {
-                $address .= $data['state'] . " ";
+            if (isset($data['state']) && $data['state']) {
+                $address .= ' ' . $data['state'];
             }
-            if (isset($data['zipcode'])) {
-                $address .= $data['zipcode'] . " ";
+            if (isset($data['zipcode']) && $data['zipcode']) {
+                $address .= ' ' . $data['zipcode'];
             }
 
             if (isset($data['address_book_id'])) {
@@ -347,7 +347,8 @@ if ($merchant_info=Yii::app()->functions->getMerchant($s['kr_merchant_id'])){
                                 <?php
                                 else:
                                 ?>
-                                <input id="toggle-billing-address" type="checkbox" checked> Billing Address : (<?php echo $address; ?>)Tick the checkbox to change your billing address</label>
+                                <input id="toggle-billing-address" type="checkbox" checked> Billing Address : (<?php
+                                    echo $address; ?>) <span class="red">Tick the checkbox to change your billing address</span></label>
                                 <?php
                                 endif;
                                 ?>
@@ -455,6 +456,16 @@ if ($merchant_info=Yii::app()->functions->getMerchant($s['kr_merchant_id'])){
                         $('#billing-address').show();
                     } else {
                         $('#billing-address').hide();
+
+                        var billingAddress1 = $('#billing-address-1'),
+                            billingCity = $('#billing-city'),
+                            billingPostcode = $('#billing-postcode');
+
+                        removeError(billingAddress1);
+                        removeError(billingCity);
+                        removeError(billingPostcode);
+
+                        sapValid = true;
                     }
                 })
                 .trigger('click');

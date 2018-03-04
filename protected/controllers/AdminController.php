@@ -378,7 +378,9 @@ class AdminController extends CController
 	public function actionSmsSettings()
 	{
 		$this->crumbsTitle=Yii::t("default","SMS Settings");
-		$this->render('sms-settings');
+		$this->render('sms-settings',array(
+		 'provider_selected'=>Yii::app()->functions->getOptionAdmin('sms_provider')
+		));
 	}	
 	
 	public function actionSmsPackage()
@@ -605,18 +607,22 @@ class AdminController extends CController
 		     'receipt_template'=>array(
 		       'email'=>true,
 		       'sms'=>true,		        
-		       'email_tag'=>'order_id,customer_name,restaurant_name,total_amount,receipt,sitename,siteurl', 
-		       'sms_tag'=>'order_id,customer_name,restaurant_name,total_amount,order_details,sitename,siteurl', 
+		       'push'=>false,
+		       'email_tag'=>'order_id,customer_name,restaurant_name,total_amount,receipt,sitename,siteurl,estimated_time',
+		       'sms_tag'=>'order_id,customer_name,restaurant_name,total_amount,order_details,sitename,siteurl,estimated_time',
 		     ),
 		     'receipt_send_to_merchant'=>array(
 		       'email'=>true,
 		       'sms'=>true,		        
+		       'push'=>true,
 		       'email_tag'=>'order_id,customer_name,restaurant_name,total_amount,receipt,accept_link,decline_link,sitename,siteurl', 
 		       'sms_tag'=>'order_id,customer_name,restaurant_name,total_amount,order_details,sitename,siteurl', 
+		       'push_tag'=>'order_id,customer_name,restaurant_name,total_amount,sitename,siteurl', 
 		     ),
 		     'receipt_send_to_admin'=>array(
 		       'email'=>true,
-		       'sms'=>true,		        
+		       'sms'=>true,		     
+		       'push'=>false,   
 		       'email_tag'=>'order_id,customer_name,restaurant_name,total_amount,receipt,sitename,siteurl', 
 		       'sms_tag'=>'order_id,customer_name,restaurant_name,total_amount,order_details,sitename,siteurl', 
 		     ),
@@ -628,7 +634,8 @@ class AdminController extends CController
 		     ),*/
 		     'order_idle_to_admin'=>array(
 		       'email'=>true,
-		       'sms'=>true,		        
+		       'sms'=>true,		       
+		       'push'=>false, 
 		       'email_tag'=>'order_id,restaurant_name,idle_time,sitename,siteurl', 
 		       'sms_tag'=>'order_id,restaurant_name,idle_time,sitename,siteurl', 
 		     )
@@ -637,23 +644,29 @@ class AdminController extends CController
 		  'booking_template'=>array(
 		     'customer_booked'=>array(
 		       'email'=>true,
-		       'sms'=>false,		        
+		       'sms'=>false,		
+		       'push'=>false,              
 		       'email_tag'=>'booking_id,restaurant_name,number_guest,date_booking,time,customer_name,email,mobile,instruction,status,sitename,siteurl',	       
 		     ),
 		     'booked_notify_admin'=>array(
 		       'email'=>true,
-		       'sms'=>false,		        
+		       'sms'=>false,		
+		       'push'=>false,                      
 		       'email_tag'=>'booking_id,restaurant_name,number_guest,date_booking,time,customer_name,email,mobile,instruction,status,sitename,siteurl',	       
 		     ),
 		     'booked_notify_merchant'=>array(
 		       'email'=>true,
-		       'sms'=>false,		        
+		       'sms'=>false,		   
+		       'push'=>true,                   
 		       'email_tag'=>'booking_id,restaurant_name,number_guest,date_booking,time,customer_name,email,mobile,instruction,status,sitename,siteurl',	       
+		       'push_tag'=>'booking_id,restaurant_name,number_guest,date_booking,time,customer_name,email,mobile,instruction,status,sitename,siteurl',	       
 		     ),
 		     'booking_update_status'=>array(
 		       'email'=>true,
-		       'sms'=>false,		        
+		       'sms'=>false,		       
+		       'push'=>true,               
 		       'email_tag'=>'booking_id,restaurant_name,number_guest,date_booking,time,customer_name,email,mobile,instruction,status,merchant_remarks,sitename,siteurl',	       
+		       'push_tag'=>'booking_id,restaurant_name,number_guest,date_booking,time,customer_name,email,mobile,instruction,status,merchant_remarks,sitename,siteurl', 
 		     )
 		  ),
 		  

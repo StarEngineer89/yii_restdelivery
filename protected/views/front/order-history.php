@@ -31,7 +31,10 @@
          </div>
        </div>
         </td>
-        
+        <td>
+            <p><?php echo t('Estimated Time') ?></p>
+            <p><?php echo $val['est_time'] ?> <?php echo Yii::t('default', 'mins') ?></p>
+        </td>
         <td>        
         <a class="add-to-cart" href="javascript:;" data-id="<?php echo $val['order_id']?>" >    
         <p><?php echo clearString($val['merchant_name'])?></p>    

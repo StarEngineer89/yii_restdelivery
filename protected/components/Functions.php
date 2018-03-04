@@ -362,6 +362,7 @@ class Functions extends CApplicationComponent
             "lastTotalSales"=>Yii::t("default","Last 30 days Total Sales"),
             "lastItemSales"=>Yii::t("default","Last 30 days Total Sales By Item"),
             "NewOrderStatsMsg"=>Yii::t("default","New Order has been placed."),
+            "MarkAllAsCheckedMsg"=>Yii::t("default","Mark all as checked"),
 
             'Hour'=>Yii::t("default","Hour"),
             'Minute'=>Yii::t("default","Minute"),
@@ -3635,6 +3636,14 @@ class Functions extends CApplicationComponent
                     $food_item_info_test = $this->getFoodItem($val['item_id']);
                     $list_free_items1 = json_decode($food_item_info_test['price'],true);
 
+                    /*
+                     *  Add free items list to fix price issue of free item by CStar - on 2018-01-30
+                     */
+                    $list_free_items = json_decode($food_item_info_test['free_item'], true);
+                    //error_log(json_encode($food_item_info_test), 3, 'debug.log');
+                    $list_exclude_items = json_decode($food_item_info_test['exclude_item'], true);
+                    /* End update by CStar*/
+
                     $val['notes']=isset($val['notes'])?$val['notes']:"";
                     $size_words='';
 
@@ -4070,19 +4079,22 @@ class Functions extends CApplicationComponent
                     }
                 } else {
                     if ( $promo_res=Yii::app()->functions->getMerchantOffersActive($mid)){
-                        $merchant_spend_amount=$promo_res['offer_price'];
-                        $merchant_discount_amount=number_format($promo_res['offer_percentage'],0);
-                        if ( $subtotal>=$merchant_spend_amount){
-                            $show_discount=true;
-                            $merchant_discount_amount1=$merchant_discount_amount/100;
-                            $discounted_amount=$subtotal*$merchant_discount_amount1;
-                            $subtotal=$subtotal-$discounted_amount;
+                        if (isset( $promo_res['order_type']) && ( $promo_res['order_type'] == '' ||
+                                $promo_res['order_type'] == $data['delivery_type'] ) ) {
+                            $merchant_spend_amount=$promo_res['offer_price'];
+                            $merchant_discount_amount=number_format($promo_res['offer_percentage'],0);
+                            if ( $subtotal>=$merchant_spend_amount){
+                                $show_discount=true;
+                                $merchant_discount_amount1=$merchant_discount_amount/100;
+                                $discounted_amount=$subtotal*$merchant_discount_amount1;
+                                $subtotal=$subtotal-$discounted_amount;
 
-                            $_SESSION['promo_discount']=1;
+                                $_SESSION['promo_discount']=1;
 
-                            /** check if item is taxable*/
-                            if ($food_taxable==false){
-                                $subtotal_non=$subtotal_non-$discounted_amount;
+                                /** check if item is taxable*/
+                                if ($food_taxable==false){
+                                    $subtotal_non=$subtotal_non-$discounted_amount;
+                                }
                             }
                         }
                     }

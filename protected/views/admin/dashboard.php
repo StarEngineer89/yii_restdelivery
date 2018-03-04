@@ -100,6 +100,7 @@
             <th width="3%"><?php echo Yii::t('default',"Platform")?></th>
             <th width="3%"><?php echo Yii::t('default',"Date")?></th>  
             <th width="3%"><?php echo Yii::t('default',"special_instructions")?></th>
+            <th width="2%"><?php echo Yii::t('default', "Estimated time") ?></th>
         </tr>
     </thead>
     <tbody>    

@@ -45,6 +45,7 @@ if($val['service']==1 || $val['service']==2  || $val['service']==4  || $val['ser
         <div class="top25"></div>
 
         <?php echo FunctionsV3::merchantOpenTag($merchant_id)?>
+
         <?php echo FunctionsV3::getFreeDeliveryTag($merchant_id)?>
 
         <p class="top15 cuisine concat-text">
@@ -89,18 +90,35 @@ if($val['service']==1 || $val['service']==2  || $val['service']==4  || $val['ser
 
         <?php echo FunctionsV3::displayServicesList($val['service'])?>
 <!--        --><?php //$isMerchantOpen = Yii::app()->functions->isMerchantOpen($merchant_id) ?>
-        <?php $isMerchantOpenPickup = Yii::app()->functions->isMerchantOpenPickup($merchant_id) ?>
 
-        <div class="">
-            <?php if ($isMerchantOpenPickup): ?>
-                <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=pickup"
-                   class="orange-button rounded3 medium">
-                    <span><?php echo t("Order A Collection")?></span>
-                </a>
-            <?php else: ?>
-                <?php $merchantPickupTimes = FunctionsV3::getMerchantPickupTime($merchant_id) ?>
-                <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=pickup"
-                   class="orange-button rounded3 medium">
+        <!-- Display the countdown timer in an element -->
+        <?php $businessHours = FunctionsV3::getMerchantOpenTime($merchant_id) ?>
+        <?php $closeTime = date('Y-m-d') . ' ' . $businessHours[1] ?>
+        <?php $currentTime = date('Y-m-d H:i:s') ?>
+        <?php if (isset($businessHours[1]) && (strtotime($closeTime) > strtotime($currentTime) && strtotime($closeTime) < strtotime($currentTime . '+1 hour'))): ?>
+            <p><?php echo Yii::t('default', 'Restaurant closing in ') ?>
+                <span id="countdown-timer_<?php echo $merchant_id ?>" class="countdown-timer" data-time="<?php echo $closeTime ?>"></span>
+                <i class="green-color ion-clock"></i>
+            </p>
+        <?php endif; ?>
+
+        <?php $merchantServices = Yii::app()->functions->Services()[FunctionsV3::getMerchantServices($merchant_id)] ?>
+        <?php $merchantServices = explode(' ', $merchantServices) ?>
+
+        <?php if (in_array('Pickup', $merchantServices)): ?>
+            <div class="">
+                <?php $isMerchantOpenPickup = Yii::app()->functions->isMerchantOpenPickup($merchant_id) ?>
+                <?php if ($isMerchantOpenPickup): ?>
+                    <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=pickup"
+                       class="orange-button rounded3 medium">
+                        <i class="collection-btn"></i>
+                        <span><?php echo t("Order A Collection")?></span>
+                    </a>
+                <?php else: ?>
+                    <?php $merchantPickupTimes = FunctionsV3::getMerchantPickupTime($merchant_id) ?>
+                    <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=pickup"
+                       class="orange-button rounded3 medium">
+                        <i class="collection-btn"></i>
                 <span>
                     <?php if ($merchantPickupTimes == "holiday"): ?>
                         <?php echo t("Holiday")?>
@@ -108,31 +126,36 @@ if($val['service']==1 || $val['service']==2  || $val['service']==4  || $val['ser
                         <?php echo t("Collect From " . $merchantPickupTimes[0]) ?>
                     <?php endif; ?>
                 </span>
-                </a>
-            <?php endif; ?>
-        </div>
+                    </a>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
-        <div>
-            <?php $isMerchantOpenDelivery = Yii::app()->functions->isMerchantOpenDelivery($merchant_id) ?>
-            <?php if ($isMerchantOpenDelivery): ?>
-                <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=delivery"
-                   class="orange-button rounded3 medium">
-                    <span><?php echo t("Order A Delivery")?></span>
-                </a>
-            <?php else: ?>
-                <?php $merchantOpenTimes = FunctionsV3::getMerchantDeliveryTime($merchant_id) ?>
-                <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=delivery"
-                   class="orange-button rounded3 medium">
-                <span>
-                    <?php if ($merchantOpenTimes == "holiday"): ?>
-                        <?php echo t("Holiday")?>
-                    <?php else: ?>
-                        <?php echo t("Delivery From " . $merchantOpenTimes[0])?>
-                    <?php endif; ?>
-                </span>
-                </a>
-            <?php endif; ?>
-        </div>
+        <?php if (in_array('Delivery', $merchantServices)): ?>
+            <div class="">
+                <?php $isMerchantOpenDelivery = Yii::app()->functions->isMerchantOpenDelivery($merchant_id) ?>
+                <?php if ($isMerchantOpenDelivery): ?>
+                    <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=delivery"
+                       class="orange-button rounded3 medium">
+                        <i class="delivery-btn"></i>
+                        <span><?php echo t("Order A Delivery")?></span>
+                    </a>
+                <?php else: ?>
+                    <?php $merchantOpenTimes = FunctionsV3::getMerchantDeliveryTime($merchant_id) ?>
+                    <a href="<?php echo Yii::app()->createUrl("/menu-". trim($val['restaurant_slug']))?>?option-type=delivery"
+                       class="orange-button rounded3 medium">
+                        <i class="delivery-btn"></i>
+                    <span>
+                        <?php if ($merchantOpenTimes == "holiday"): ?>
+                            <?php echo t("Holiday")?>
+                        <?php else: ?>
+                            <?php echo t("Delivery From " . $merchantOpenTimes[0])?>
+                        <?php endif; ?>
+                    </span>
+                    </a>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
 
 
     </div> <!--inner-->

@@ -69,6 +69,16 @@ if (isset($_GET['id'])){
   ))?>
 </div>
 
+    <div class="uk-form-row">
+        <label class="uk-form-label"><?php echo Yii::t("default","Order Type")?></label>
+        <?php echo CHtml::dropDownList('order_type',
+            isset($data['order_type'])?$data['order_type']:"",
+            (array)orderTypeList(),
+            array(
+                'class'=>'',
+            ))?>
+    </div>
+
 <div class="uk-form-row">
   <label class="uk-form-label"><?php echo Yii::t("default","Status")?></label>
   <?php echo CHtml::dropDownList('status',

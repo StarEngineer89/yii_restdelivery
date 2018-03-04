@@ -148,3 +148,12 @@ function paymentStatus()
 function dump($data=''){
     echo '<pre>';print_r($data);echo '</pre>';
 }
+
+function orderTypeList()
+{
+    return array(
+        '' => Yii::t('default', ''),
+        'delivery'=>Yii::t("default",'Delivery'),
+        'pickup'=>Yii::t("default",'Pickup')
+    );
+}

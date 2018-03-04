@@ -62,7 +62,7 @@
     specialKeys.push(39); //Right
     function IsAlphaNumeric(e) {
         var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
-        var ret = ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) = 1 && e.charCode != e.keyCode));
+        var ret = ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) == 1 && e.charCode != e.keyCode));
         document.getElementById("error").style.display = ret ? "none" : "inline";
         return ret;
     }
@@ -103,16 +103,22 @@
     }
 
     checkStreetNum = function () {
-        var re = /^([A-Za-z0-9]+)+$/;
+        var re = /^([A-Za-z]+)+$/;
 //        var re = /^([A-Za-z0-9]*)+$/;
-        var strObj = $('#street');
-        if(re.test($('#street').val()) == false) {
+
+        var result = false;
+        var str = document.getElementById('street').value;
+        if (str.search(/\d/) == -1) {
+            result = true;
+        } else if (str.search(/[a-zA-Z]/) == -1) {
+            result = true;
+        }
+
+        if (result == true) {
             $('.street-tooltip').show();
         } else {
             $('.street-tooltip').hide();
         }
-
-
     }
 
     $(document).ready(function () {
@@ -244,16 +250,15 @@ echo CHtml::hiddenField('admin_currency_position',
 
                 <!--<a href="javascript: history.go(-1)" class="place_order green-button medium inline blocks"><i class="ion-ios-arrow-thin-left"></i> <?php echo t("Go Back")?></a>-->
 
-                <a href="<?php echo Yii::app()->createUrl("/menu-". ucwords($merchant_info['restaurant_slug']))?>"
+                <a href="<?php echo Yii::app()->createUrl("/menu-". ucwords($merchant_info['restaurant_slug']))?>?option-type=<?php echo $s['kr_delivery_options']['delivery_type'] ?>"
                    class="backbuttononly orange-button rounded3 medium bottom10 inline-block">
                     <i class="ion-ios-arrow-thin-left"></i>
                     <?php echo t("Go Back")?>
                 </a>
             </div>
 
-
-
-            <div class="col-md-9 border">  </div> </div>
+            <div class="col-md-9 border">  </div>
+        </div>
 
         <?php if ( $continue==TRUE):?>
             <?php
@@ -735,8 +740,6 @@ echo CHtml::hiddenField('admin_currency_position',
                     ));
                     ?>
 
-
-
                     <!--END CREDIT CART-->
 
                 </div> <!--box rounded-->
@@ -915,3 +918,5 @@ curl_close($curl);
 
 
 </script>
+
+<div id="confirm" style="background-position: top right; background-repeat: no-repeat; padding-top: 10px; display: none;"></div>

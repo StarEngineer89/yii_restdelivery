@@ -2832,6 +2832,7 @@ class StoreController extends CController
                 'distance'                   => $distance,
                 'merchant_delivery_distance' => $merchant_delivery_distance,
                 'delivery_fee'               => $delivery_fee,
+                'service_option'               => $_GET['option-type']
             ));
         } else {
             $this->render('error', array(

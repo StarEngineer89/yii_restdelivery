@@ -1,9 +1,9 @@
-
+<!--
 <div class="mobile-banner-wrap relative">
  <div class="layer"></div>
- <img class="mobile-banner" src="<?php echo assetsURL()."/images/banner-2-mobile.jpg"?>">
+ <img class="mobile-banner" src="<?php /*echo assetsURL()."/images/banner-2-mobile.jpg"*/?>">
 </div>
-
+-->
 <div id="parallax-wrap" class="parallax-search" 
 data-parallax="scroll" data-position="center" data-bleed="10" 
 data-image-src="<?php echo assetsURL()."/images/banner-2.jpg"?>">
